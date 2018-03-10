@@ -67,8 +67,9 @@
 \newcommand{\supervisor}[1]{\def\@supervisor{#1}}
 \newcommand{\reviewer}[1]{\def\@reviewer{#1}}
 \newcommand{\status}[1]{\def\@status{#1}}
-\newcommand{\titleineng}[1]{\def\@titleineng{#1}}
 \newcommand{\secondauthor}[1]{\def\@secondauthor{#1}}
+\newcommand{\thirdauthor}[1]{\def\@thirdauthor{#1}}
+\newcommand{\fourthauthor}[1]{\def\@fourthauthor{#1}}
 
 % Pirmos eilutės paragrafe atitraukimas 1 cm
 \setlength{\parindent}{1cm}
@@ -120,7 +121,6 @@
      \null\vfil
      \vskip 2.5cm
      {\singlespacing \LARGE \textbf{\@title} \par}
-     {\singlespacing \Large \textbf{\@titleineng} \par}%
      \vskip 0.8cm
      {\large \@papertype}%
   \end{center}
@@ -132,7 +132,6 @@
         {\begin{tabular}[t]{l l}%
         \bigskip Atliko: &\; \@author \hfill \@signatureplace \\
         \bigskip Darbo vadovas: &\; \@supervisor \hfill  \@signatureplace \\
-        Darbo recenzentas: &\; \@reviewer \hfill \@signatureplace
         \end{tabular} \par}%
      \end{flushright}
      \vskip 4cm
@@ -144,8 +143,9 @@
         {\begin{tabular}[t]{l l}%
         \bigskip Atliko: &\; \@author \hfill \@signatureplace \\
         \bigskip &\; \@secondauthor \hfill \@signatureplace \\
+		\bigskip &\; \@thirdauthor \hfill \@signatureplace \\
+		\bigskip &\; \@fourthauthor \hfill \@signatureplace \\
         \bigskip Darbo vadovas: &\; \@supervisor \hfill  \@signatureplace \\
-        Darbo recenzentas: &\; \@reviewer \hfill \@signatureplace
         \end{tabular} \par}%
      \end{flushright}
      \vskip 3.8cm
