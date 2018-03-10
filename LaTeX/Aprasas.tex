@@ -12,6 +12,8 @@
 \usepackage{listings}
 \usepackage{subfig}
 \usepackage{wrapfig}
+\usepackage{array}
+\usepackage[table]{xcolor}
 
 % Titulinio aprašas
 \university{Vilniaus universitetas}
@@ -35,7 +37,7 @@
 \tableofcontents
 
 \sectionnonum{Įvadas}
-Trumpas įvadas į sistemą
+Čia turės atsirasti trumpas įvadas į mūsų sistemą, ko ja siekiame ir t.t.
 
 \section{Reikalavimai}
 
@@ -44,7 +46,7 @@ Trumpas įvadas į sistemą
 \section{Užduotys}
 
 \sectionnonum{Išvados}
-Čia bus parašytis teksto išvados
+Čia reikės parašyti šio darbo išvadas, ką nuveikėme ir ko pasiekėme
 
 \printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
 % literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų
@@ -55,9 +57,45 @@ Trumpas įvadas į sistemą
 % necituoti savo kursinio darbo, nes tai nėra oficialus literatūros šaltinis.
 % Jei tokių nuorodų reikia, pateikti jas tekste.
 
-\appendix  % Priedai
+% Priedai
+\appendix
 \section{Rastos klaidos ir jų sprendimai}
+\begin{table}[H]\footnotesize
+	\centering
+	\caption{Klaidos}
+	{\rowcolors{2}{yellow!50}{yellow!40}
+	\setlength{\arrayrulewidth}{0.25mm}
+	{\begin{tabular}{|c|c|m{11.5cm}|} \hline
+	Kodas & Terminas & Reikšmė \\
+	\hline
 
+	\hline
+	\end{tabular}}
+	}
+	\label{tab:table example}
+\end{table}
+
+\section{Žodynas}
+\begin{table}[H]\footnotesize
+	\centering
+	\caption{Terminų žodynas}
+	{\rowcolors{2}{yellow!50}{yellow!40}
+	\setlength{\arrayrulewidth}{0.25mm}
+	{\begin{tabular}{|c|c|m{11.5cm}|} \hline
+	Kodas & Terminas & Reikšmė \\
+	\hline
+	T1 & Naudotojas & Fizinis asmuo, kuris turi paskyrą aplikacijoje, kurios dėka gali pateikti pagalbos prašymą ar pagalbą suteikt \\
+	T2 & Pagalbos prašantysis & Mobilios aplikacijos naudotojas, kuris išsikviečia pagalbą \\
+	T3 & Pagalbos teikėjas & Mobilios aplikacijos naudotojas, kuris  priima pagalbos prašymą ir atlieka darbą \\
+	T4 & Administratorius & Fizinis asmuo, turintis išskirtines teises sistemoje, prižiūri sąžiningą darbų atlikimą ir atsiskaitymą. Nesilaikančius taisyklių vartotojus gali užblokuoti \\
+	T5 & Pagalbos prašymas & Užklausa aplikacijoje, kurią naudotojas pateikia sistemai pagal sistemoje nurodytą procedūrą, ir kurioje tiesiogiai nurodomas norimos pagalbos pobūdis \\
+	T6 & Atsiskaitymas & Pagalbos prašytojo pervedama taškų/kreditų suma už atlikta darbą/paslaugą \\
+	\hline
+	\end{tabular}}
+	}
+	\label{tab:table example}
+\end{table}
+	
 
 
 \end{document}
