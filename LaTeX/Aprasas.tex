@@ -31,6 +31,7 @@
 % Nustatymai
 % \setmainfont{Palemonas}   % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
 \bibliography{bibliografija}
+\setcounter{tocdepth}{3}
 
 \begin{document}
 \maketitle
@@ -40,6 +41,330 @@
 Čia turės atsirasti trumpas įvadas į mūsų sistemą, ko ja siekiame ir t.t.
 
 \section{Reikalavimai}
+\subsection{Funkciniai reikalavimai}
+
+\subsubsection{Pagrindiniai funkciniai reikalavimai}
+\subsubsubsection{Naudotojo sąsajos funkcijos}
+\begin{itemize}
+	\item \textbf{FR1} Registruotis sistemoje (privalomi duomenys: el. pašto adresas, slaptažodis, vardas, pavardė, asmens kodas, gyvenamosios vietos adresas, telefono numeris).
+	\item \textbf{FR2} Prisijungti prie sistemos (privalomi duomenys: el. pašto adresas, slaptažodis).
+	\item \textbf{FR3} Atnaujinti savo duomenis (pasirinktinai: el. pašto adresas, slaptažodis, gyvenamosios vietos adresas, telefono numeris).
+	\item \textbf{FR4} Prašyti pakeisti užmirštą slaptažodį.
+	\item \textbf{FR5} Atsijungti nuo sistemos.
+	\item \textbf{FR6} Pateikti pagalvos prašymo užklausą
+	\item \textbf{FR7} Atlikti esamų darbų paiešką (sąrašą surikiuoti pagal pasirinktus kriterijus ar kategorijas).
+	\item \textbf{FR8} Peržiūrėti esamų darbų sąrašą (pateikti pilną darbų sąrašą, išrikiuotą abėcėlės arba priešinga abėcėlei tvarka).
+	\item \textbf{FR9} Pasirinkti atlikti darbą.
+	\item \textbf{FR10} Patvirtinti atliekamą darbą.
+	\item \textbf{FR11} Atšaukti pasirinktą darbą.
+	\item \textbf{FR12} Atsiskaityti
+	\item \textbf{FR13} Patvirtinti gautą apmokėjimą.
+	\item \textbf{FR14} Įvertinti kitą naudotoją.
+	\item \textbf{FR15} Peržiūrėti kito naudotojo paskyrą.
+	\item \textbf{FR16} Peržiūrėti individualizuotus darbų pasiūlymus (darbų pasiūlymai teikiami atsižvelgiant į jau prieš tai atliktus darbus).
+	\item \textbf{FR17} Peržiūrėti atilktų darbų istoriją.
+	\item \textbf{FR18} Peržiūrėti atsiskaitymų istoriją.
+	\item \textbf{FR19} Peržiūrėti savo reitingą.
+	\item \textbf{FR20} Peržiūrėti naudotojų reitingų lentelę(lentelė pateikiama išrikiavus naudotojus mažėjimo tvarka pagal didžiausią reitingą).
+\end{itemize}
+
+\subsubsubsection{Sistemos administratoriaus sąsajos funkcijos}
+\begin{itemize}
+	\item \textbf{FR21} Prisijungti prie sistemos (privalomi duomenys: el. pašto adresas ir slaptažodis).
+	\item \textbf{FR22} Atsijungti nuo sistemos.
+	\item \textbf{FR23} Sukurti naują vartotojo paskyrą duomenų bazėje.
+	\item \textbf{FR24} Ištrinti vartotojo paskyrą iš duomenų bazės.
+	\item \textbf{FR25} Pašalinti pagalbos prašymo užklausą iš sąrašo.
+	\item \textbf{FR26} Patvirtinti naują naudotoją.
+	\item \textbf{FR27} Pativrtinti atsiskaitymą.
+	\item \textbf{FR28} Redaguoti naudotojo paskyros duomenis (pasirinktinai: el. pašto adresas, slaptažodis, vardas, pavardė, asmens kodas, gyvenamosios vietos adresas, telefono numeris).
+	\item \textbf{FR29} Atsakyti į naudotojų klausimus.
+	\item \textbf{FR30} Išsiųsti pranešimą naudotojams (privalomai: gavėjų el. pašto adresai, antrašė, pranešimo tekstas).
+	\item \textbf{FR31} Peržiūrėti registruotų naudotojų sąrašą, jų prašymų užklausų pateikimo istorijas, atsiskaitymo istorijas.
+	\item \textbf{FR32} Peržiūrėti kasdienį lankomumą.
+	\item \textbf{FR33} Peržiūrėti naudotojų lokacijas.
+	\item \textbf{FR34} Peržiūrėti naudotojų demografinės statistikos duomenis ( pvz.: pateikti pirkėjų dalį procentais pagal lytį).
+	\item \textbf{FR35} Išsaugoti atsarginę duomenų kopiją.
+\end{itemize}
+
+\subsubsection{Šalutiniai funkciniai reikalavimai}
+\subsubsubsection{Aplikacijos navigacijos reikalavimai}
+\begin{itemize}
+	\item \textbf{FR36} Iš visų langų galima patekti į pagrindinį, prisijungimo, registracijos bei informacijos langus.
+	\item \textbf{FR37} Atliktų ir užsakytų darbų istorijos bei virtualios piniginės langai matomi tik prisijungusiems pirkėjams.
+	\item \textbf{FR38} Iš pagrindinio lango galima patekti į šiuos langus:
+	\begin{itemize}
+		\item darbų sąrašas,
+		\item užklausų pateikimas,
+		\item istorija,
+		\item virtuali piniginė,
+		\item vartotojo paskyra,
+		\item nustatymai.
+	\end{itemize}
+	\item \textbf{FR39} Iš darbų sąrašo galima patekti  į darbų aprašymo langus
+\end{itemize}
+
+\subsubsubsection{Vartotojo registracija sistemoje}
+\begin{itemize}
+	\item \textbf{FR40} Prisijungdamas vartotojas užpildo šiuos duomenis:
+	\begin{itemize}
+		\item El. Pašto adresas,
+		\item Slaptažodis
+		\item Vardas,
+		\item Pavardė,
+		\item Telefono numeris.
+	\end{itemize}
+	\item \textbf{FR41} Tam, kad įvestas vartotojo el. pašto adresas būtų tinkamos formos, jis turi būti sudarytas iš abonento vardo, „@“ simbolio bei domeno adreso.
+	\item \textbf{FR42} Slaptažodis privalo atitikti saugaus slaptažodžio reikalavimus. Saugiu slaptažodžiu laikomas toks, kuris yra sudarytas bent iš 8 simbolių, turi bent vieną skaitmenį ir raidę.
+\end{itemize}
+
+\subsubsubsection{Vartotojo prisijungimas sistemoje}
+\begin{itemize}
+	\item \textbf{FR43} Prisijungdamas vartotojas suveda email adresą ir slaptažodį.
+	\item \textbf{FR44} Vartotojo įvesti duomenys (slaptažodis bei el. pašto adresas) turi buti sutikrinti su duomenimis, esančiais duomenų bazėje. Jei rastas atitikimas, vartotojas sėkmingai prijungiamas prie sistemos.
+\end{itemize}
+
+\subsubsubsection{Siūlomų darbų peržiūra}
+\begin{itemize}
+	\item \textbf{FR45} Darbų sąrašas gali būti rūšiuojamas pagal:
+	\begin{itemize}
+		\item Artimiausią atstumą,
+		\item Trukmę,
+		\item Atlygį,
+		\item Darbo specifikaciją
+	\end{itemize}
+\end{itemize}
+
+\subsubsubsection{Patvirtinimas atlikti darbą}
+\begin{itemize}
+	\item \textbf{FR46} Paslaugos teikėjas sutinka atlikti konkretų darbą.
+	\item \textbf{FR47} Paslaugos prašantysis patvirtina arba atmeta paslaugos teikėją.
+	\item \textbf{FR48} Po patvirtinimo pagalbos teikėjas gauna tikslų adresą ir laiką kada reikės atlikti darbą.
+\end{itemize}
+
+\subsubsubsection{Užsakymo apmokėjimas}
+\begin{itemize}
+	\item \textbf{FR49} Atsiskaitymai galimi tik virtualiais pinigais.
+	\item \textbf{FR50} Atlikus darbą, teikėjas tai patvirtina ir laukia prašančiojo ivertinimo. Kai įvertinamas darbas, pinigai automatiškai pervedami iš pagalbos prašančiojo į pagalbos teikėjo sąskaitą.
+\end{itemize}
+
+\subsubsubsection{Pagalbos prašymo sukūrimas}
+\begin{itemize}
+	\item \textbf{FR51} Registruotas vartotojas sukuria paslaugos prašymą nurodydamas:
+	\begin{itemize}
+		\item Konkretų darbą
+		\item Darbo trukmę
+		\item Užmokestį už atliktą darbą
+	\end{itemize}
+	\item \textbf{FR52} Visos kainos turi būti pateiktos euro valiuta (€).
+\end{itemize}
+
+\subsubsubsection{Užklausų pašalinimas}
+\begin{itemize}
+	\item \textbf{FR53} Jei nei vienas vartotojas nėra pradėjęs atlikti darbo, pagalbos prašantysis gali ištrinti savo sukurtą užklausą.
+	\item \textbf{FR54} Jei jau pradėtas daryti, jis neberodomas darbo pasiūlymo sąraše.
+\end{itemize}
+
+\subsubsection{Pagalbiniai reikalavimai}
+\subsubsubsection{Vartotojo gidas}
+\begin{itemize}
+	\item \textbf{FR55} Pirmą kartą apsilankius sistemoje (prie naudotojo interfeiso) automatiškai rodomas interaktyvus vartotojo gidas. Vartotojo gidas sudarytas iš trumpų pagalbos žinučių, pateikiančių sistemos naudojimo galimus žingsnius. 
+	\item \textbf{FR56} Vartotojui pateikiami šie sistemos naudojimo scenarijai:
+	\begin{itemize}
+		\item Kaip sukurti pagalbos prašymą.
+		\item Kaip peržiūrėti darbų sąrašą.
+		\item Kaip rūšiuoti darbus.
+		\item Kaip prisijungti banko kortelę atsiskaitymams.
+		\item Kaip rasti geriausius pasiūlymus.
+		\item Kaip peržiūrėti savo užsakymų istoriją.
+	\end{itemize}
+	\item \textbf{FR57} Po pirmo apsilankymo vartotojo gidas automatiškai išjungiamas ir veliau neberodomas, bet vartotojas gali jį bet kada įjungti rankiniu būdu.
+\end{itemize}
+
+\subsubsubsection{Slaptažodžio atkūrimas}
+\begin{itemize}
+	\item \textbf{FR58} Vartotojas, pamiršęs slaptažodį, gali jį pakeisti pasinaudodamas slaptažodžio atkūrimo forma. Formą sudaro el. pašto adreso įvedimo laukelis ir mygtukas slaptažodžio atkūrimo užklausai pateiki. Į laukelį įvedus sistemoje užregistruoto vartotojo el. pašto adresą ir paspaudus užklausos pateikimo mygtuką įvestuoju el. paštu išsiunčiamas laiškas su nuoroda į tuo adresu užregistruoto vartotojo slaptažodžio pakeitimo formą.
+\end{itemize}
+
+\subsubsubsection{Sistemos pagalba gyvai}
+\begin{itemize}
+	\item \textbf{FR59} Susidūrus su kėblumais naudojantis sistema ir nerandant informacijos, kaip šiuos kėblumus išspręsti, vartotojas gali pasinaudoti tiesioginio susirašinėjimo funkcija. Tiesioginis susirašinėjimas pradedamas po to, kai vartotojas paspaudžia ant lango apatiniame dešiniame kampe esančio „Pagalba gyvai“ mygtuko. Vartotojui aprašius problemą su kuria susidūrė, artimiausiu metu su juo susisieks konsultantas ir padės ją išspręsti.
+\end{itemize}
+
+\subsubsubsection{Pranešimas apie klaidą}
+\begin{itemize}
+	\item \textbf{FR60} Aptikus klaidą ar susidūrus su kitokia problema sistemoje vartotojas gali nesunkiai apie tai pranešti sistemos administratoriui naudodamasis pranešimo apie klaidą funkcija.
+\end{itemize}
+
+\subsubsubsection{Sistemos laukų gidas}
+\begin{itemize}
+	\item \textbf{FR61} Jei vartotojui kyla abejonių, ką daro vienas ar kitas laukas, jis gali ilgiau palaikyti ant to lauko ir šalia pagrindinių sistemos elementų pasirodys tekstinis paaiškinimas su informacija, kam skirta ta sistemos dalis.
+\end{itemize}
+
+\subsection{Nefunkciniai reikalavimai}
+\subsubsection{Sisteminių interfeisų reikalavimai}
+\subsubsubsection{OS naudojimo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR1} Programų sistemos realizacijai neprivaloma naudoti specifinį OS.
+	\item \textbf{NFR2} Mobiliajame įrenginyje turi būti įdiegta bet kuri iš Android (4.4 KitKat arba naujesnė versija) mobiliųjų operacinių sistemų.
+\end{itemize}
+
+\subsubsubsection{Sąveikos su Duomenų Baze reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR3} Naudojama MySQL (pageidautina 5.6 arba naujesnes versijos) duomenų bazių valdymo sistema. Mobilioji aplikacija gauna duomenis iš „Microsoft Azure Web App“ internetinio serviso, kuris yra susietas su „Microsoft Azure Database“ MySQL 5.7 duomenų baze.
+	\item \textbf{NFR4} DB turi lenteles „Vartotojas“, „Darbas“, kurioms įgalioti naudotojai gali sudaryti užklausas
+\end{itemize}
+
+\subsubsubsection{Darbo kompiuterių tinkluose reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR5} Duomenys perduodami naudojant standartinį TCP/IP protokolą.
+\end{itemize}
+
+\subsubsubsection{Sąveikos su kitomis programomis reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR6} Mobilioji aplikacija gauna informaciją apie vartotojo buvimo vietą iš mobiliojo įrenginio GPS sistemos.
+\end{itemize}
+
+\subsubsubsection{Programavimo aplinkos reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR7} Mobilioji aplikacija kuriama Java programavimo kalba naudojant Android Studio.
+	\item \textbf{NFR8} Mobiliosios aplikacijos internetinis servisas yra sukurtas naudojant XML-pagrindo informacijos keitimosi sistema ir naudoja HTTP protokolą.
+\end{itemize}
+
+\subsubsection{Veikimo reikalavimai}
+\subsubsubsection{Vaizdavimo tikslumo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR9} Teksto užrašymui turi būti naudojama UTF-8 simbolių koduotė
+	\item \textbf{NFR10} Darbo aprašymo antraštė – ne daugiau 25 simbolių.
+	\item \textbf{NFR11} Darbo aprašymas – ne daugiau 500 simbolių.
+	\item \textbf{NFR12} Atstumas nuo paslaugos atlikimo vietos – kilometrų tikslumų.
+	\item \textbf{NFR13} Pinigai už paslaugą – centų tikslumu.
+	\item \textbf{NFR14} Vartotojo prisijungimo vardas – ne daugiau 20 simbolių, specialieji simboliai neleidžiami
+	\item \textbf{NFR15} Data turi būti vaizduojama formatu YYYY-MM-DD, kur YYYY – metai, MM – mėnuo, DD – diena.
+	\item \textbf{NFR16} Laikas turi būti vaizduojamas minučių tikslumu, hh:mm, kur hh – valandos, mm – minutės.
+\end{itemize}
+
+\subsubsubsection{Skaičiavimo tikslumo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR17} Piniginės operacijos atliekamos centų tikslumų.
+	\item \textbf{NFR18} Data turi būti apskaičiuojama ir saugojama formatu YYYY-MM-DD, kur YYYY – metai, MM – mėnuo, DD – diena. Maksimali paklaida - 1 diena.
+	\item \textbf{NFR19} Laikas turi būti apskaičiuojamas ir saugojamas formatu hh:mm:ss, kur hh - valandos, mm - minutės, ss - sekundės. Maksimali paklaida - 3 sekundės.
+\end{itemize}
+
+\subsubsubsection{Patikimumo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR20} Sistema turi veikti be sustojimo, o sustabdoma tik atnaujinimams įdiegti, apie kuriuos vartotojams bus pranešta išėjus atnaujinimams.
+	\item \textbf{NFR21} Sistemos maksimalus atnaujinimimo įdiegimo laikas – 30 minučių.
+	\item \textbf{NFR22} Registruojant naują vartotoją sistema turi patikrinti ar:
+	\begin{itemize}
+		\item Įvestas elektroninis pašto adresas yra tinkamo formato ir ankščiau nebuvo registruotas.
+		\item Vartotojo sugalvotas slaptažodis yra saugus.
+		\item Iš sąrašo pasirinktas miestas/rajonas.
+		\item Vardas ir pavardė yra tinkamos reikšmės ir formato.
+		\item Telefono numeris yra tinkamo formato.
+		\item Prisijungimo vardas yra tinkamos reikšmės.
+		\item Banko sąskaitos numeris yra tinkamos reikšmės ir formato.
+	\end{itemize}
+	\item \textbf{NFR23} Į Duomenų bazę įvedant arba atnaujinant pagalbos prašymą sistema turi patikrinti, ar:
+	\begin{itemize}
+		\item Pagalbos prašymo ID yra unikalus.
+		\item Atlygis už suteiktą pagalbą nėra lygūs nuliui arba neigiamas.
+	\end{itemize}
+	\item \textbf{NFR24} Į Duomenų bazę įvedant arba atnaujinant pagalbos prašymą sistemos administratorius turi patikrinti ar pagalbos prašymo tūrinys yra tinkamas.
+\end{itemize}
+
+\subsubsubsection{Robastiškumo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR25} Kaskart vartotojui atidarius mobiliąją aplikaciją jis turi būti informuojamas, jei nėra interneto ryšio arba ryšys neįjungtas.
+	\item \textbf{NFR26} Sistemoje turi būti įdiegtos apsaugos priemonės nuo duomenų sugadinimo, praradimo, klaidingų duomenų įvedimo į Duomenų bazę.
+	\item \textbf{NFR27} Po kiekvienos sėkmingos operacijos pakeitimai turi būti išsaugomi Duomenų bazę.
+	\item \textbf{NFR28} Nepavykus prisijungti prie internetinio serviso, sistema turi informuoti vartotoją parodydamą klaidos pranešimą.
+\end{itemize}
+
+\subsubsubsection{Našumo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR29} Mobilioji aplikacija neturi naudoti daugiau nei 70\% procesoriaus pajėgumo.
+	\item \textbf{NFR30} Pagalbos prašymas turi atsirasti pagalbos prašymų sąraše greičiau nei per 20 sekundžių.
+	\item \textbf{NFR31} Internetinio serviso talpinimo (hostingo) planas turi būti parinktas atsižvelgiant į prognozuojamąklientų srautą. Rekomenduojamas duomenų srautas - 8 TB/mėn., vieta serveryje - 100 GB.
+\end{itemize}
+
+\subsubsection{Diegimo reikalavimai}
+\subsubsubsection{Ruošinio reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR32} Privalo būti pateikta:
+	\begin{itemize}
+		\item Dokumentacija.
+		\item Programinės įrangos vartotojo vadovas.
+		\item Nuoroda į internetinį servisą
+		\item Mobiliosios aplikacijos .apk failas.
+		\item Mobiliosios aplikacijos .ipa failas.
+		\item Visa informacija ir failai, kurie reikalingi mobiliosios aplikacijos patalpinimui į „Google Play Store“.
+		\item „Microsoft Azure“ administratoriaus paskyros prisijungimo duomenys.
+	\end{itemize}
+\end{itemize}
+
+\subsubsubsection{Instaliavimo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR33} Norėdamas įdiegti aplikaciją vartotojas privalo duoti sutikimą dėl duomenų gavimo internetu, GPS vietos nustatymo ir garso pranešimų gavimą.
+	\item \textbf{NFR34} Mobiliosios aplikacijos įdiegimui įrenginyje turi būti bent 180 megabaitų vidinės atminties.
+	\item \textbf{NFR35} Mobiliosios aplikacijos instaliavimo procedūra negali trukti ilgiau nei 20 minučių.
+\end{itemize}
+
+\subsubsubsection{Sistemos įsisavinamumo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR36} Sistema turi funkcionuoti viena kalba: lietuvių.
+	\item \textbf{NFR37} Pirmą kartą naudodamasis sistema vartotojas turi būti supažindinamas su esminėmis sistemos galimybėmis.
+\end{itemize}
+
+\subsubsection{Aptarnavimo ir priežiūros reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR38} Pakeitimai ir atnaujinimai turi būti įdiegti per ne vėliau nei 7 darbo dienas po sėkmingo testavimo.
+	\item \textbf{NFR39} Pastebėtos ar vartotojų praneštos klaidos turi būti ištaisytos per 5 darbo dienas.
+	\item \textbf{NFR40} Į vartotojo laiškus su pastebėjimais ir skundais atsakyti reikia per 3 darbo dienas.
+	\item \textbf{NFR41} Atsinaujinti mobiliąją aplikaciją vartotojas turi per „Google Play Store“.
+	\item \textbf{NFR42} Sistema turi turėti ne trumpesnį nei 1 mėn. bandomąjį laikotarpį.
+	\item \textbf{NFR43} Po kiekvieno esminio atnaujinimo vartotojas turi būti su juo supažindinamas pasitelkiant grafinio (tekstinio ir/arba vaizdinio) pavidalo informaciją.
+\end{itemize}
+
+\subsubsection{Tiražuojamumo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR44} Mobilioji aplikacija turi veikti Android:
+	\begin{itemize}
+		\item Minimalus API lygis - 21.
+		\item Vaizdas turi prisitaikyti prie gulsčio („landscape“) ir portreto („portrait“) ekrano rėžimų bei keturių pagrindinių ekrano dydžių: „small“, „normal“, „large“, „xlarge“.
+		\item Vaizdas turi prisitaikyti prie skirtingų rezoliucijų: mdpi (medium), hdpi (hdpi), xhdpi (extra high), xxhdpi (extra-extra high).
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Apsaugos reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR45} Vartotojui prisijungiant prie sistemos vykdoma jo identifikacija.
+	\item \textbf{NFR46} Duomenų bazėje saugomas slaptažodžių maišos kodas, o ne pats slaptažodis.
+	\item \textbf{NFR47} Vartotojo duomenys saugomi duomenų bazėje, prieigą prie jos turi tik sistemos administratorius/iai.
+	\item \textbf{NFR48} Atsarginės Duomenų bazės kopijos turi būti daromos reguliariai kas 7 darbo dienas.
+	\item \textbf{NFR49} Jei vartotojas neaktyvus ilgiau nei 10 minučių, jis turi būti automatiškai atjungiamas nuo sistemos.
+	\item \textbf{NFR50} Jei vartotojas nesinaudoja sistema ilgiau nei 365 dienų, jis turi būti pašalinamas iš sistemos.
+	\item \textbf{NFR51} Vartotojas privalo pasikeisti slaptažodį bent kartą per 6 mėnesius.
+\end{itemize}
+
+\subsubsection{Juridiniai reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR52} Kuriant sistemą projekto komanda neturi naudotis nelegalia programine įranga.
+	\item \textbf{NFR53} Duomenų perdavimas ir saugojimas neturi pažeisti LR asmens duomenų teisinės apsaugos įstatymo.
+	\item \textbf{NFR54} Internetinėje svetainėje ir mobiliojoje aplikacijoje turi būti galimybė peržiūrėti naudojimosi sąlygas.
+\end{itemize}
+
+\subsubsection{Pranešimų formulavimo reikalavimai}
+\begin{itemize}
+	\item \textbf{NFR55} Pranešimas turi pateikti informaciją apie sėkmingai atliktą veiksmą arba informuoti apie klaidą.
+	\item \textbf{NFR56} Pranešime vartojami tik interfeiso naudotojams žinomi terminai.
+	\item \textbf{NFR57} Pranešimo tekstas turi būti suprantamas vienareikšmiškai.
+	\item \textbf{NFR58} Pranešimas apie klaidą gali būti nedetalizuotas, tačiau turi būti pateikiama nuorodą į išsamų klaidos aprašą.
+	\item \textbf{NFR59} Pranešimas turi turėti antraštę.
+	\item \textbf{NFR60} Pranešimo teksto ilgis ne daugiau kaip 140 simbolių.
+	\item \textbf{NFR61} Pranešimo langas negali užimti daugiau nei 30\% ekrano pločio ir ilgio.
+	\item \textbf{NFR62} Turi būti galimynė išjungti pranešimo langą.
+\end{itemize}
 
 \section{Struktūrinis dalykinės srities modelis}
 
@@ -65,10 +390,12 @@
 	\caption{Klaidos}
 	{\rowcolors{2}{yellow!50}{yellow!40}
 	\setlength{\arrayrulewidth}{0.25mm}
-	{\begin{tabular}{|c|c|m{11.5cm}|} \hline
-	Kodas & Terminas & Reikšmė \\
+	{\begin{tabular}{|c|m{5.75cm}|m{5.75cm}|} \hline
+	Kodas & Klaida & Sprendimas \\
 	\hline
-
+	\textbf{NFR1} & Sistemos realizavimas pririštas prie specifinio OS & Pakeisti reikalavimą \\
+	\textbf{NFR7} & Aplikacija kuriama C\# programavimo kalba naudojant Visual Studio & Kalbą pakeisti į Java, o IDE į Android Studio \\
+	\textbf{NFR19} & Aplikacija turi pranešti apie atnaujinimus 12 valandų prieš jų išėjimą & Aplikacija vartotojui praneš tik išėjus atnaujinimams \\
 	\hline
 	\end{tabular}}
 	}
