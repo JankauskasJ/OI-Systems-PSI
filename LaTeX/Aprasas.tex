@@ -44,6 +44,20 @@
 \section{Struktūrinis dalykinės srities modelis}
 
 \section{Užduotys}
+\subsection{Pirkėjo sąsajos užduotys}
+\subsubsection{"Registruotis sistemoje"}
+Naudotojas prisijungimo lange spaudžia "Užsiregistruoti", atsiveria registravimosi langas. Jame naudotojas į atskirus laukelius suveda privalomus duomenis: el. pašto adresą, slaptažodį, vardą, pavardę, gyvenamosios vietos adresą bei telefono numerį. Viską suvedęs, naudotojas spaudžia "Registruotis" ir sistema atveria pagrindinį programėlės langą. Užsiregistravęs naudotojas pagrindiniame lange automatiškai laikomas prisijungusiu.
+\subsubsection{"Prisijungti prie sistemos"}
+Įsijungęs programėlę neprisijungęs naudotojas iš karto mato prisijugimo langą, kuriame suveda prisijungimo duomenis: el. pašto adresą bei slaptažodį. Suvedęs duomenis naudotojas spaudžia "Prisijungti", tada sistema patikrina, ar įvesti duomenys teisingi. Jei duomenys suvesti teisingai, atsidaro pagrindinis programėlės langas, o naudotojas nuo to momento, kai prisijungė, iki to momento, kai atsijungs, laikomas prisijungusiu.
+Naudotojas prisijungimo lange neteisingai įveda prisijungimo duomenis, tada sistema praneša naudotojui, kad duomenys buvo įvesti neteisingai, bei vėl atvaizduoja prisijungimo langą, kad naudotojas galėtų bandyti prisijungti dar kartą.
+\subsubsection{"Atnaujinti savo duomenis"}
+Naudotojas paskyros lange spaudžia "Atnaujinti duomenis", tada atveriamas paskyros atnaujinimo langas, kuriame vaizduojami esami paskyros duomenys. Esamus paskyros duomenis naudotojas redaguoja ir baigęs redaguoti spaudžia "Atnaujinti". Tada sistema atnaujina duomenis duomenų bazėje, praneša naudotojui, kad duomenys atnaujinti sėkmingai, ir atvaizduoja paskyros langą su atnaujintais duomenimis.
+Naudotojas paskyros atnaujinimo lange suveda netinkamus duomenis, tada sistema praneša naudotojui, kad duomenys įvesti neteisingai, ir atvaizduoja paskyros atnaujinimo langą, kad naudotojas galėtų suvesti duomenis dar kartą.
+\subsubsection{"Prašyti priminti slaptažodį"}
+Naudotojas prisijungimo lange spaudžia "Pamiršau slaptažodį", tada sistema atvaizduoja slaptažodžio apriminimo langą, kuriame naudotojas suveda norimos paskyros el. pašto adresą ir spaudžia "Gauti slaptažodį", tada sistema patikrina el. pašto adresą ir, jei toks naudotojas(su tokiu el. pašto adresu) egzistuoja duomenų bazėje, išsiunčia šiuo el. pašto adresu laišką su naudotojo slaptažodžiu.
+Naudotojas slaptažodžio priminimo lange įveda netinkamą el. pašto adresą, tada sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra, ir atvaizduoja slaptažodžio priminimo langą, kad naudotojas dar kartą galėtų suvesti el. paštą.
+\subsubsection{"Atsijungti nuo sistemos"}
+
 
 \sectionnonum{Išvados}
 Čia reikės parašyti šio darbo išvadas, ką nuveikėme ir ko pasiekėme
