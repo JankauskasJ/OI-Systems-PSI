@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6600 64-bit) (preloaded format=xelatex 2018.3.6)  11 MAR 2018 19:28
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6600 64-bit) (preloaded format=xelatex 2018.3.6)  12 MAR 2018 22:18
 entering extended mode
 **./Aprasas.tex
 (Aprasas.tex
@@ -1282,29 +1282,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [3
 
-] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13
+] [4] [5] [6] [7] [8] [9] [10] [11] [12
 
-] [14
+] [13
+
+] [14] [15] [16]
+
+LaTeX Warning: Empty bibliography on input line 406.
+
+[17
 
 ]
-
-LaTeX Warning: Empty bibliography on input line 376.
-
-[15
-
-]
-Underfull \hbox (badness 2744) in paragraph at lines 397--397
+Underfull \hbox (badness 2744) in paragraph at lines 427--427
 []|\TU/texgyretermes(0)/m/n/10 Aplikacija kuriama C# programavimo
  []
 
-[16
+[18
 
 ]
-Overfull \hbox (4.23141pt too wide) in paragraph at lines 411--424
+Overfull \hbox (4.23141pt too wide) in paragraph at lines 441--454
  [][] 
  []
 
-[17
+[19
 
 ] (Aprasas.aux)
 
@@ -1317,10 +1317,10 @@ Package logreq Info: Writing requests to 'Aprasas.run.xml'.
 Here is how much of TeX's memory you used:
  23911 strings out of 427832
  460788 string characters out of 3152396
- 959009 words of memory out of 3000000
+ 962009 words of memory out of 3000000
  27617 multiletter control sequences out of 15000+200000
  544775 words of font info for 96 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  67i,12n,96p,10541b,787s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Aprasas.pdf (18 pages).
+Output written on Aprasas.pdf (20 pages).
