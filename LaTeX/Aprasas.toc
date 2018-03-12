@@ -32,17 +32,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.1.2.8.}Užklausų pašalinimas}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.3.}Pagalbiniai reikalavimai}{6}
+\contentsline {paragraph}{\numberline {1.1.2.9.}Slaptažodžio atkūrimas}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.3.1.}Vartotojo gidas}{6}
+\contentsline {paragraph}{\numberline {1.1.2.10.}Sistemos pagalba gyvai}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.3.2.}Slaptažodžio atkūrimas}{7}
+\contentsline {paragraph}{\numberline {1.1.2.11.}Pranešimas apie klaidą}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.3.3.}Sistemos pagalba gyvai}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.3.4.}Pranešimas apie klaidą}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.3.5.}Sistemos laukų gidas}{7}
+\contentsline {paragraph}{\numberline {1.1.2.12.}Sistemos laukų gidas}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.}Nefunkciniai reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
@@ -50,11 +46,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.1.1.}OS naudojimo reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.1.2.}Sąveikos su Duomenų Baze reikalavimai}{8}
+\contentsline {paragraph}{\numberline {1.2.1.2.}Sąveikos su Duomenų Baze reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.1.3.}Darbo kompiuterių tinkluose reikalavimai}{8}
+\contentsline {paragraph}{\numberline {1.2.1.3.}Darbo kompiuterių tinkluose reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.1.4.}Sąveikos su kitomis programomis reikalavimai}{8}
+\contentsline {paragraph}{\numberline {1.2.1.4.}Sąveikos su kitomis programomis reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.1.5.}Programavimo aplinkos reikalavimai}{8}
 \defcounter {refsection}{0}\relax 
@@ -62,40 +58,86 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.2.1.}Vaizdavimo tikslumo reikalavimai}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.2.2.}Skaičiavimo tikslumo reikalavimai}{9}
+\contentsline {paragraph}{\numberline {1.2.2.2.}Skaičiavimo tikslumo reikalavimai}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.2.3.}Patikimumo reikalavimai}{9}
+\contentsline {paragraph}{\numberline {1.2.2.3.}Patikimumo reikalavimai}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.2.4.}Robastiškumo reikalavimai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.2.5.}Našumo reikalavimai}{10}
+\contentsline {paragraph}{\numberline {1.2.2.5.}Našumo reikalavimai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.}Diegimo reikalavimai}{10}
+\contentsline {subsubsection}{\numberline {1.2.3.}Diegimo reikalavimai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.3.1.}Ruošinio reikalavimai}{10}
+\contentsline {paragraph}{\numberline {1.2.3.1.}Ruošinio reikalavimai}{9}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.3.2.}Instaliavimo reikalavimai}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.3.3.}Sistemos įsisavinamumo reikalavimai}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.4.}Aptarnavimo ir priežiūros reikalavimai}{11}
+\contentsline {subsubsection}{\numberline {1.2.4.}Aptarnavimo ir priežiūros reikalavimai}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.5.}Tiražuojamumo reikalavimai}{11}
+\contentsline {subsubsection}{\numberline {1.2.5.}Tiražuojamumo reikalavimai}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.2.6.}Apsaugos reikalavimai}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.7.}Juridiniai reikalavimai}{12}
+\contentsline {subsubsection}{\numberline {1.2.7.}Juridiniai reikalavimai}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.8.}Pranešimų formulavimo reikalavimai}{12}
+\contentsline {subsubsection}{\numberline {1.2.8.}Pranešimų formulavimo reikalavimai}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.}Struktūrinis dalykinės srities modelis}{13}
+\contentsline {section}{\numberline {2.}Struktūrinis dalykinės srities modelis}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Užduotys}{14}
+\contentsline {section}{\numberline {3.}Užduotys}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Išvados}{15}
+\contentsline {subsection}{\numberline {3.1.}Naudotojo sąsajos užduotys}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\MakeUppercase {Priedai}}{15}
+\contentsline {subsubsection}{\numberline {3.1.1.}UC1 "Registruotis sistemoje"}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{1 priedas.\nobreakspace {}Rastos klaidos ir jų sprendimai}{16}
+\contentsline {subsubsection}{\numberline {3.1.2.}UC2 "Prisijungti prie sistemos"}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{2 priedas.\nobreakspace {}Žodynas}{17}
+\contentsline {subsubsection}{\numberline {3.1.3.}UC3 "Atnaujinti savo duomenis"}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.4.}UC4 "Prašyti priminti slaptažodį"}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.5.}UC5 "Atsijungti nuo sistemos"}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.6.}UC6 "Pateikti pagalbos prašymo užklausą"}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.7.}UC7 "Atlikti esamų darbų paiešką"}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.8.}UC8 "Peržiūrėti esamų darbų sąrašą"}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.9.}UC9 "Pasirinkti atlikti darbą"}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.10.}UC10 "Patvirtinti atliekamą darbą"}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.11.}UC11 "Atšaukti pasirinktą darbą"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.12.}UC12 "Įvertinti kitą naudotoją"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.13.}UC13 "Peržiūrėti kito naudotojo paskyrą"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.14.}UC14 "Peržiūrėti individualizuotus darbų pasiūlymus"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.15.}UC15 "Peržiūrėti atliktų darbų istoriją"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.16.}UC16 "Peržiūrėti atsiskaitymų istorija"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.17.}UC17 "Peržiūrėti savo reitingą"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.18.}UC18 "Peržiūrėti naudotojų reitingų lentelę"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.19.}UC19 "Peržiūrėti pasirinktų darbų sąrašą"}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.20.}UC20 "Peržiūrėti pateiktų darbų sąrašą"}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.}Sistemos administratoriaus sąsajos užduotys}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1.}UC21 "Prisijungti prie sistemos"}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Išvados}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\MakeUppercase {Priedai}}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{1 priedas.\nobreakspace {}Rastos klaidos ir jų sprendimai}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{2 priedas.\nobreakspace {}Žodynas}{19}
