@@ -34,11 +34,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.1.2.9.}Slaptažodžio atkūrimas}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.2.10.}Sistemos pagalba gyvai}{7}
+\contentsline {paragraph}{\numberline {1.1.2.10.}Pranešimas apie klaidą}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.2.11.}Pranešimas apie klaidą}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.2.12.}Sistemos laukų gidas}{7}
+\contentsline {paragraph}{\numberline {1.1.2.11.}Sistemos laukų gidas}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.}Nefunkciniai reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
@@ -52,11 +50,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.1.4.}Sąveikos su kitomis programomis reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.1.5.}Programavimo aplinkos reikalavimai}{8}
+\contentsline {paragraph}{\numberline {1.2.1.5.}Programavimo aplinkos reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.}Veikimo reikalavimai}{8}
+\contentsline {subsubsection}{\numberline {1.2.2.}Veikimo reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.2.1.}Vaizdavimo tikslumo reikalavimai}{8}
+\contentsline {paragraph}{\numberline {1.2.2.1.}Vaizdavimo tikslumo reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.2.2.}Skaičiavimo tikslumo reikalavimai}{8}
 \defcounter {refsection}{0}\relax 
@@ -70,7 +68,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.3.1.}Ruošinio reikalavimai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.3.2.}Instaliavimo reikalavimai}{10}
+\contentsline {paragraph}{\numberline {1.2.3.2.}Instaliavimo reikalavimai}{9}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.3.3.}Sistemos įsisavinamumo reikalavimai}{10}
 \defcounter {refsection}{0}\relax 
@@ -78,7 +76,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.2.5.}Tiražuojamumo reikalavimai}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.6.}Apsaugos reikalavimai}{11}
+\contentsline {subsubsection}{\numberline {1.2.6.}Apsaugos reikalavimai}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.2.7.}Juridiniai reikalavimai}{11}
 \defcounter {refsection}{0}\relax 

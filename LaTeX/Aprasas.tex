@@ -46,14 +46,14 @@
 \subsubsection{Pagrindiniai funkciniai reikalavimai}
 \subsubsubsection{Naudotojo sąsajos funkcijos}
 \begin{itemize}
-	\item \textbf{FR1} Registruotis sistemoje (privalomi duomenys: el. pašto adresas, slaptažodis, vardas, pavardė, asmens kodas, gyvenamosios vietos adresas, telefono numeris).
+	\item \textbf{FR1} Registruotis sistemoje (privalomi duomenys: el. pašto adresas, slaptažodis, vardas, pavardė, telefono numeris).
 	\item \textbf{FR2} Prisijungti prie sistemos (privalomi duomenys: el. pašto adresas, slaptažodis).
 	\item \textbf{FR3} Atnaujinti savo duomenis (pasirinktinai: el. pašto adresas, slaptažodis, gyvenamosios vietos adresas, telefono numeris).
 	\item \textbf{FR4} Prašyti pakeisti užmirštą slaptažodį.
 	\item \textbf{FR5} Atsijungti nuo sistemos.
-	\item \textbf{FR6} Pateikti pagalvos prašymo užklausą
+	\item \textbf{FR6} Pateikti pagalbos prašymo užklausą
 	\item \textbf{FR7} Atlikti esamų darbų paiešką (sąrašą surikiuoti pagal pasirinktus kriterijus ar kategorijas).
-	\item \textbf{FR8} Peržiūrėti esamų darbų sąrašą (pateikti pilną darbų sąrašą, išrikiuotą abėcėlės arba priešinga abėcėlei tvarka).
+	\item \textbf{FR8} Peržiūrėti esamų darbų sąrašą.
 	\item \textbf{FR9} Pasirinkti atlikti darbą.
 	\item \textbf{FR10} Patvirtinti atliekamą darbą.
 	\item \textbf{FR11} Atšaukti pasirinktą darbą.
@@ -128,10 +128,9 @@
 \begin{itemize}
 	\item \textbf{FR45} Darbų sąrašas gali būti rūšiuojamas pagal:
 	\begin{itemize}
-		\item Artimiausią atstumą,
-		\item Trukmę,
-		\item Atlygį,
-		\item Darbo specifikaciją
+		\item artimiausią atstumą,
+		\item atlygį,
+		\item atlikimo datą.
 	\end{itemize}
 \end{itemize}
 
@@ -153,7 +152,7 @@
 	\item \textbf{FR51} Registruotas vartotojas sukuria paslaugos prašymą nurodydamas:
 	\begin{itemize}
 		\item Konkretų darbą
-		\item Darbo trukmę, iki kada reikia atlikti konkretų darbą
+		\item Iki kada reikia atlikti konkretų darbą
 		\item Užmokestį už atliktą darbą
 	\end{itemize}
 	\item \textbf{FR52} Visos kainos turi būti pateiktos virtualios valiutos vienetais.
@@ -167,22 +166,17 @@
 
 \subsubsubsection{Slaptažodžio atkūrimas}
 \begin{itemize}
-	\item \textbf{FR55} Vartotojas, pamiršęs slaptažodį, gali jį pakeisti pasinaudodamas slaptažodžio atkūrimo forma. Formą sudaro el. pašto adreso įvedimo laukelis ir mygtukas slaptažodžio atkūrimo užklausai pateiki. Į laukelį įvedus sistemoje užregistruoto vartotojo el. pašto adresą ir paspaudus užklausos pateikimo mygtuką įvestuoju el. paštu išsiunčiamas laiškas su nuoroda į tuo adresu užregistruoto vartotojo slaptažodžio pakeitimo formą.
-\end{itemize}
-
-\subsubsubsection{Sistemos pagalba gyvai}
-\begin{itemize}
-	\item \textbf{FR56} Susidūrus su kėblumais naudojantis sistema ir nerandant informacijos, kaip šiuos kėblumus išspręsti, vartotojas gali pasinaudoti tiesioginio susirašinėjimo funkcija. Tiesioginis susirašinėjimas pradedamas po to, kai vartotojas paspaudžia ant lango apatiniame dešiniame kampe esančio „Pagalba gyvai“ mygtuko. Vartotojui aprašius problemą su kuria susidūrė, artimiausiu metu su juo susisieks konsultantas ir padės ją išspręsti.
+	\item \textbf{FR55} Vartotojas, pamiršęs slaptažodį, gali jį pakeisti pasinaudodamas slaptažodžio atkūrimo forma. Formą sudaro el. pašto adreso įvedimo laukelis ir mygtukas slaptažodžio atkūrimo užklausai pateiki. Į laukelį įvedus sistemoje užregistruoto vartotojo el. pašto adresą ir paspaudus užklausos pateikimo mygtuką įvestuoju el. paštu išsiunčiamas laiškas su naudotojo slaptažodžiu.
 \end{itemize}
 
 \subsubsubsection{Pranešimas apie klaidą}
 \begin{itemize}
-	\item \textbf{FR57} Aptikus klaidą ar susidūrus su kitokia problema sistemoje vartotojas gali nesunkiai apie tai pranešti sistemos administratoriui naudodamasis pranešimo apie klaidą funkcija.
+	\item \textbf{FR56} Aptikus klaidą ar susidūrus su kitokia problema sistemoje vartotojas gali nesunkiai apie tai pranešti sistemos administratoriui naudodamasis pranešimo apie klaidą funkcija.
 \end{itemize}
 
 \subsubsubsection{Sistemos laukų gidas}
 \begin{itemize}
-	\item \textbf{FR58} Jei vartotojui kyla abejonių, ką daro vienas ar kitas laukas, jis gali ilgiau palaikyti ant to lauko ir šalia pagrindinių sistemos elementų pasirodys tekstinis paaiškinimas su informacija, kam skirta ta sistemos dalis.
+	\item \textbf{FR57} Jei vartotojui kyla abejonių, ką daro vienas ar kitas laukas, jis gali ilgiau palaikyti ant to lauko ir šalia pagrindinių sistemos elementų pasirodys tekstinis paaiškinimas su informacija, kam skirta ta sistemos dalis.
 \end{itemize}
 
 \subsection{Nefunkciniai reikalavimai}
@@ -426,6 +420,7 @@ Naudotojas pagrindiniame lange spaudžia "Pateikti darbai", tada sistema atvaizd
 	\textbf{NFR1} & Sistemos realizavimas pririštas prie specifinio OS & Pakeisti reikalavimą \\
 	\textbf{NFR7} & Aplikacija kuriama C\# programavimo kalba naudojant Visual Studio & Kalbą pakeisti į Java, o IDE į Android Studio \\
 	\textbf{NFR20} & Aplikacija turi pranešti apie atnaujinimus 12 valandų prieš jų išėjimą & Aplikacija vartotojui praneš tik išėjus atnaujinimams \\
+	\textbf{FR1} & Registracijai reikalingas asmens kodas ir gyvenamosios vietos adresas & Nereikalauti asmens kodo ir gyvenamosios vietos adreso registracijos metu \\
 	\hline
 	\end{tabular}}
 	}
