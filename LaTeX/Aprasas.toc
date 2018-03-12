@@ -90,47 +90,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.1.}UC1 "Registruotis sistemoje"}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.}UC2 "Prisijungti prie sistemos"}{13}
+\contentsline {subsubsection}{\numberline {3.1.2.}UC2 "Prisijungti prie sistemos"}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.3.}UC3 "Atnaujinti savo duomenis"}{13}
+\contentsline {subsubsection}{\numberline {3.1.3.}UC3 "Atnaujinti savo duomenis"}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.4.}UC4 "Prašyti priminti slaptažodį"}{13}
+\contentsline {subsubsection}{\numberline {3.1.4.}UC4 "Prašyti priminti slaptažodį"}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.5.}UC5 "Atsijungti nuo sistemos"}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.6.}UC6 "Pateikti pagalbos prašymo užklausą"}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.7.}UC7 "Atlikti esamų darbų paiešką"}{14}
+\contentsline {subsubsection}{\numberline {3.1.7.}UC7 "Atlikti esamų darbų paiešką"}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.8.}UC8 "Peržiūrėti esamų darbų sąrašą"}{14}
+\contentsline {subsubsection}{\numberline {3.1.8.}UC8 "Peržiūrėti esamų darbų sąrašą"}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.9.}UC9 "Pasirinkti atlikti darbą"}{14}
+\contentsline {subsubsection}{\numberline {3.1.9.}UC9 "Pasirinkti atlikti darbą"}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.10.}UC10 "Patvirtinti atliekamą darbą"}{14}
+\contentsline {subsubsection}{\numberline {3.1.10.}UC10 "Patvirtinti atliekamą darbą"}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.11.}UC11 "Atšaukti pasirinktą darbą"}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.12.}UC12 "Įvertinti kitą naudotoją"}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.13.}UC13 "Peržiūrėti kito naudotojo paskyrą"}{15}
+\contentsline {subsubsection}{\numberline {3.1.13.}UC13 "Peržiūrėti kito naudotojo paskyrą"}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.14.}UC14 "Peržiūrėti individualizuotus darbų pasiūlymus"}{15}
+\contentsline {subsubsection}{\numberline {3.1.14.}UC14 "Peržiūrėti individualizuotus darbų pasiūlymus"}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.15.}UC15 "Peržiūrėti atliktų darbų istoriją"}{15}
+\contentsline {subsubsection}{\numberline {3.1.15.}UC15 "Peržiūrėti atliktų darbų istoriją"}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.16.}UC16 "Peržiūrėti atsiskaitymų istorija"}{15}
+\contentsline {subsubsection}{\numberline {3.1.16.}UC16 "Peržiūrėti atsiskaitymų istorija"}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.17.}UC17 "Peržiūrėti savo reitingą"}{15}
+\contentsline {subsubsection}{\numberline {3.1.17.}UC17 "Peržiūrėti savo reitingą"}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.18.}UC18 "Peržiūrėti naudotojų reitingų lentelę"}{15}
+\contentsline {subsubsection}{\numberline {3.1.18.}UC18 "Peržiūrėti naudotojų reitingų lentelę"}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.19.}UC19 "Peržiūrėti pasirinktų darbų sąrašą"}{15}
+\contentsline {subsubsection}{\numberline {3.1.19.}UC19 "Peržiūrėti pasirinktų darbų sąrašą"}{16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.20.}UC20 "Peržiūrėti pateiktų darbų sąrašą"}{16}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Sistemos administratoriaus sąsajos užduotys}{16}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1.}UC21 "Prisijungti prie sistemos"}{16}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Išvados}{17}
 \defcounter {refsection}{0}\relax 
