@@ -174,11 +174,6 @@
 	\item \textbf{FR56} Aptikus klaidą ar susidūrus su kitokia problema sistemoje vartotojas gali nesunkiai apie tai pranešti sistemos administratoriui naudodamasis pranešimo apie klaidą funkcija.
 \end{itemize}
 
-\subsubsubsection{Sistemos laukų gidas}
-\begin{itemize}
-	\item \textbf{FR57} Jei vartotojui kyla abejonių, ką daro vienas ar kitas laukas, jis gali ilgiau palaikyti ant to lauko ir šalia pagrindinių sistemos elementų pasirodys tekstinis paaiškinimas su informacija, kam skirta ta sistemos dalis.
-\end{itemize}
-
 \subsection{Nefunkciniai reikalavimai}
 \subsubsection{Sisteminių interfeisų reikalavimai}
 \subsubsubsection{OS naudojimo reikalavimai}
@@ -347,7 +342,7 @@
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.8]{img/UC}
-    \caption{UseCase diagrama}
+    \caption{Naudotojo užduočių diagrama}
     \label{img:uc}
 \end{figure}
 
@@ -400,6 +395,14 @@ Naudotojas šoniniame meniu spaudžia "Mano darbai", tada sistema atvaizduoja la
 \subsubsection{UC20 "Peržiūrėti pateiktų darbų sąrašą"}
 Naudotojas šoniniame meniu spaudžia "Mano darbai", tada sistema atvaizduoja langą "Mano darbai", kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
 
+\subsection{Reikalavimų - Užduočių atsekamumo matrica}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{img/UC-matrix}
+    \caption{Užduočių-Reikalavimų atsekamumo matrica}
+    \label{img:uc-matrix}
+\end{figure}
+
 \sectionnonum{Išvados}
 Remiantis ICONIX procesu, šiame dokumente surašyti visi reikalavimai mobiliajai programėlei "Help4Help". Taip pat sukurtas ir pateiktas dalykinės srities modelis, aprašyti užduočių vykdymo scenarijai bei sukurtos atsekamumo matricos.
 
@@ -421,13 +424,13 @@ Remiantis ICONIX procesu, šiame dokumente surašyti visi reikalavimai mobiliaja
 	{\rowcolors{2}{yellow!50}{yellow!40}
 	\setlength{\arrayrulewidth}{0.25mm}
 	{\begin{tabular}{|c|m{5.75cm}|m{5.75cm}|} \hline
-	Kodas & Klaida & Sprendimas \\
-	\hline
-	\textbf{NFR1} & Sistemos realizavimas pririštas prie specifinio OS & Pakeisti reikalavimą \\
-	\textbf{NFR7} & Aplikacija kuriama C\# programavimo kalba naudojant Visual Studio & Kalbą pakeisti į Java, o IDE į Android Studio \\
-	\textbf{NFR20} & Aplikacija turi pranešti apie atnaujinimus 12 valandų prieš jų išėjimą & Aplikacija vartotojui praneš tik išėjus atnaujinimams \\
-	\textbf{FR1} & Registracijai reikalingas asmens kodas ir gyvenamosios vietos adresas & Nereikalauti asmens kodo ir gyvenamosios vietos adreso registracijos metu \\
-	\hline
+		Kodas & Klaida & Sprendimas \\
+		\hline
+		\textbf{NFR1} & Sistemos realizavimas pririštas prie specifinio OS & Pakeisti reikalavimą \\
+		\textbf{NFR7} & Aplikacija kuriama C\# programavimo kalba naudojant Visual Studio & Kalbą pakeisti į Java, o IDE į Android Studio \\
+		\textbf{NFR20} & Aplikacija turi pranešti apie atnaujinimus 12 valandų prieš jų išėjimą & Aplikacija vartotojui praneš tik išėjus atnaujinimams \\
+		\textbf{FR1} & Registracijai reikalingas asmens kodas ir gyvenamosios vietos adresas & Nereikalauti asmens kodo ir gyvenamosios vietos adreso registracijos metu \\
+		\hline
 	\end{tabular}}
 	}
 	\label{tab:table example}
@@ -440,15 +443,15 @@ Remiantis ICONIX procesu, šiame dokumente surašyti visi reikalavimai mobiliaja
 	{\rowcolors{2}{yellow!50}{yellow!40}
 	\setlength{\arrayrulewidth}{0.25mm}
 	{\begin{tabular}{|c|c|m{11.5cm}|} \hline
-	Kodas & Terminas & Reikšmė \\
-	\hline
-	T1 & Naudotojas & Fizinis asmuo, kuris turi paskyrą aplikacijoje, kurios dėka gali pateikti pagalbos prašymą ar pagalbą suteikt \\
-	T2 & Pagalbos prašantysis & Mobilios aplikacijos naudotojas, kuris išsikviečia pagalbą \\
-	T3 & Pagalbos teikėjas & Mobilios aplikacijos naudotojas, kuris  priima pagalbos prašymą ir atlieka darbą \\
-	T4 & Administratorius & Fizinis asmuo, turintis išskirtines teises sistemoje, prižiūri sąžiningą darbų atlikimą ir atsiskaitymą. Nesilaikančius taisyklių vartotojus gali užblokuoti \\
-	T5 & Pagalbos prašymas & Užklausa aplikacijoje, kurią naudotojas pateikia sistemai pagal sistemoje nurodytą procedūrą, ir kurioje tiesiogiai nurodomas norimos pagalbos pobūdis \\
-	T6 & Atsiskaitymas & Pagalbos prašytojo pervedama taškų/kreditų suma už atlikta darbą/paslaugą \\
-	\hline
+		Kodas & Terminas & Reikšmė \\
+		\hline
+		T1 & Naudotojas & Fizinis asmuo, kuris turi paskyrą aplikacijoje, kurios dėka gali pateikti pagalbos prašymą ar pagalbą suteikt \\
+		T2 & Pagalbos prašantysis & Mobilios aplikacijos naudotojas, kuris išsikviečia pagalbą \\
+		T3 & Pagalbos teikėjas & Mobilios aplikacijos naudotojas, kuris  priima pagalbos prašymą ir atlieka darbą \\
+		T4 & Administratorius & Fizinis asmuo, turintis išskirtines teises sistemoje, prižiūri sąžiningą darbų atlikimą ir atsiskaitymą. Nesilaikančius taisyklių vartotojus gali užblokuoti \\
+		T5 & Pagalbos prašymas & Užklausa aplikacijoje, kurią naudotojas pateikia sistemai pagal sistemoje nurodytą procedūrą, ir kurioje tiesiogiai nurodomas norimos pagalbos pobūdis \\
+		T6 & Atsiskaitymas & Pagalbos prašytojo pervedama taškų/kreditų suma už atlikta darbą/paslaugą \\
+		\hline
 	\end{tabular}}
 	}
 	\label{tab:table example}

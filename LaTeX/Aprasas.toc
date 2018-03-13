@@ -36,8 +36,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.1.2.10.}Pranešimas apie klaidą}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.2.11.}Sistemos laukų gidas}{7}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.}Nefunkciniai reikalavimai}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.2.1.}Sisteminių interfeisų reikalavimai}{7}
@@ -60,7 +58,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.2.3.}Patikimumo reikalavimai}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.2.2.4.}Robastiškumo reikalavimai}{9}
+\contentsline {paragraph}{\numberline {1.2.2.4.}Robastiškumo reikalavimai}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {1.2.2.5.}Našumo reikalavimai}{9}
 \defcounter {refsection}{0}\relax 
@@ -128,10 +126,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.20.}UC20 "Peržiūrėti pateiktų darbų sąrašą"}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Išvados}{17}
+\contentsline {subsection}{\numberline {3.2.}Reikalavimų - Užduočių atsekamumo matrica}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\MakeUppercase {Priedai}}{17}
+\contentsline {section}{Išvados}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{1 priedas.\nobreakspace {}Rastos klaidos ir jų sprendimai}{18}
+\contentsline {section}{\MakeUppercase {Priedai}}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{2 priedas.\nobreakspace {}Žodynas}{19}
+\contentsline {subsection}{1 priedas.\nobreakspace {}Rastos klaidos ir jų sprendimai}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{2 priedas.\nobreakspace {}Žodynas}{20}

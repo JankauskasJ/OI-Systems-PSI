@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6600 64-bit) (preloaded format=xelatex 2018.3.6)  13 MAR 2018 00:55
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6600 64-bit) (preloaded format=xelatex 2018.3.6)  13 MAR 2018 11:28
 entering extended mode
 **./Aprasas.tex
 (Aprasas.tex
@@ -1289,25 +1289,28 @@ File: img/UC.jpg Graphic file (type bmp)
 <img/UC.jpg>
  [13
 
-] [14] [15] [16]
+] [14] [15]
+File: img/UC-matrix.png Graphic file (type bmp)
+<img/UC-matrix.png>
+ [16] [17]
 
-LaTeX Warning: Empty bibliography on input line 406.
-
-[17
-
-]
-Underfull \hbox (badness 2744) in paragraph at lines 427--427
-[]|\TU/texgyretermes(0)/m/n/10 Aplikacija kuriama C# programavimo
- []
+LaTeX Warning: Empty bibliography on input line 409.
 
 [18
 
 ]
-Overfull \hbox (4.23141pt too wide) in paragraph at lines 442--455
- [][] 
+Underfull \hbox (badness 2744) in paragraph at lines 430--430
+[]|\TU/texgyretermes(0)/m/n/10 Aplikacija kuriama C# programavimo
  []
 
 [19
+
+]
+Overfull \hbox (4.23141pt too wide) in paragraph at lines 445--458
+ [][] 
+ []
+
+[20
 
 ] (Aprasas.aux)
 
@@ -1318,12 +1321,12 @@ Package logreq Info: Writing requests to 'Aprasas.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23926 strings out of 427832
- 460909 string characters out of 3152396
+ 23931 strings out of 427832
+ 461001 string characters out of 3152396
  962009 words of memory out of 3000000
- 27623 multiletter control sequences out of 15000+200000
+ 27627 multiletter control sequences out of 15000+200000
  544775 words of font info for 96 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  67i,12n,96p,10541b,787s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Aprasas.pdf (20 pages).
+Output written on Aprasas.pdf (21 pages).
