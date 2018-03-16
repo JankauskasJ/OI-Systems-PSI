@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6600 64-bit) (preloaded format=xelatex 2018.3.6)  13 MAR 2018 13:33
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6600 64-bit) (preloaded format=xelatex 2018.3.6)  16 MAR 2018 21:22
 entering extended mode
 **./Aprasas.tex
 (Aprasas.tex
@@ -1282,18 +1282,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [3
 
-] [4] [5] [6] [7] [8] [9] [10] [11]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+[]\TU/texgyretermes(0)/m/n/12 Šiame skirsnyje pateikiami šalutiniai funkciniai 
+reikalavimai mobiliajai aplikacijai
+ []
+
+[4] [5] [6] [7] [8] [9] [10] [11]
 File: img/Entities.jpg Graphic file (type bmp)
 <img/Entities.jpg>
 
-Overfull \hbox (3.72629pt too wide) in paragraph at lines 341--342
+Overfull \hbox (3.72629pt too wide) in paragraph at lines 346--347
  [][] 
  []
 
 File: img/GUI.jpg Graphic file (type bmp)
 <img/GUI.jpg>
 
-Overfull \hbox (20.52617pt too wide) in paragraph at lines 348--349
+Overfull \hbox (20.52617pt too wide) in paragraph at lines 353--354
  [][] 
  []
 
@@ -1304,28 +1310,28 @@ File: img/UC.jpg Graphic file (type bmp)
 <img/UC.jpg>
  [14
 
-] [15] [16]
+] [15] [16] [17]
 File: img/UC-matrix.png Graphic file (type bmp)
 <img/UC-matrix.png>
- [17] [18]
+ [18] [19]
 
-LaTeX Warning: Empty bibliography on input line 422.
-
-[19
-
-]
-Underfull \hbox (badness 2744) in paragraph at lines 443--443
-[]|\TU/texgyretermes(0)/m/n/10 Aplikacija kuriama C# programavimo
- []
+LaTeX Warning: Empty bibliography on input line 432.
 
 [20
 
 ]
-Overfull \hbox (4.23141pt too wide) in paragraph at lines 458--471
- [][] 
+Underfull \hbox (badness 2744) in paragraph at lines 453--453
+[]|\TU/texgyretermes(0)/m/n/10 Aplikacija kuriama C# programavimo
  []
 
 [21
+
+]
+Overfull \hbox (4.23141pt too wide) in paragraph at lines 468--481
+ [][] 
+ []
+
+[22
 
 ] (Aprasas.aux)
 
@@ -1344,4 +1350,4 @@ Here is how much of TeX's memory you used:
  1328 hyphenation exceptions out of 8191
  67i,12n,96p,10541b,787s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Aprasas.pdf (22 pages).
+Output written on Aprasas.pdf (23 pages).
