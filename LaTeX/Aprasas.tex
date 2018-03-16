@@ -38,12 +38,14 @@
 \tableofcontents
 
 \sectionnonum{Įvadas}
-Šiame dokumente pateikiami reikalavimai, struktūrinis dalykinės srities modelis bei užduočių vykdymo scenarijai mobiliajai programėlei "Help4Help".
+Šiame dokumente pateikiami reikalavimai, struktūrinis dalykinės srities modelis bei užduočių vykdymo scenarijai mobiliajai programėlei „Help4Help“. Reikalavimai išskirstyti į funkcinius ir nefunkcinius. Funkciniai reikalavimai išskirstyti į pagrindinius ir šalutinius, o nefunkciniai reikalavimai išskirstyti į sisteminių interfeisų, veikimo, diegimo, aptarnavimo ir priežiūros, tiražuojamumo, apsaugos, juridinius bei pranešimų formulavimo reikalavimus. Darydami darbą rėmėmės ICONIX procesu.
 
 \section{Reikalavimai}
+Šiame skyriuje pateikiami reikalavimai mobiliajai programėlei „Help4Help“.
 \subsection{Funkciniai reikalavimai}
-
+Šiame poskyryje išskiriami funkciniai reikalavimai sistemai.
 \subsubsection{Pagrindiniai funkciniai reikalavimai}
+Šiame skirsnyje pateikiami pagrindiniai funkciniai reikalavimai sistemai.
 \subsubsubsection{Naudotojo sąsajos funkcijos}
 \begin{itemize}
 	\item \textbf{FR1} Registruotis sistemoje (privalomi duomenys: el. pašto adresas, slaptažodis, vardas, pavardė, telefono numeris).
@@ -64,7 +66,7 @@
 	\item \textbf{FR16} Peržiūrėti atsiskaitymų istoriją.
 	\item \textbf{FR17} Peržiūrėti savo reitingą.
 	\item \textbf{FR18} Peržiūrėti naudotojų reitingų lentelę(lentelė pateikiama išrikiavus naudotojus mažėjimo tvarka pagal didžiausią reitingą).
-	\item \textbf{FR19} Naudotojo sąsajos funkcijas įgyvendina mobili aplikacija "Help 4 Help".
+	\item \textbf{FR19} Naudotojo sąsajos funkcijas įgyvendina mobili aplikacija „Help4Help“.
 \end{itemize}
 
 \subsubsubsection{Sistemos administratoriaus sąsajos funkcijos}
@@ -88,6 +90,7 @@
 \end{itemize}
 
 \subsubsection{Šalutiniai funkciniai reikalavimai}
+Šiame skirsnyje pateikiami šalutiniai funkciniai reikalavimai mobiliajai aplikacijai „Help4Help“.
 \subsubsubsection{Aplikacijos navigacijos reikalavimai}
 \begin{itemize}
 	\item \textbf{FR36} Iš visų langų, prisijungus prie paskyros, galima atsidaryti navigacinį menių iš kurio galima nueiti į langus:
@@ -175,6 +178,7 @@
 \end{itemize}
 
 \subsection{Nefunkciniai reikalavimai}
+Šiame poskyryje išskiriami nefunkciniai reikalavimai sistemai. 
 \subsubsection{Sisteminių interfeisų reikalavimai}
 \subsubsubsection{OS naudojimo reikalavimai}
 \begin{itemize}
@@ -336,22 +340,23 @@
 \end{itemize}
 
 \section{Struktūrinis dalykinės srities modelis}
+Šiame skyriuje pateikiamas struktūrinis dalykinės srities modelis.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.7]{img/Entities}
     \caption{Esybių diagrama}
     \label{img:entities}
 \end{figure}
-
+1 pav. vaizduojama sistemos esybių diagrama.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.7]{img/GUI}
     \caption{Grafinės sąsajos elementų diagrama}
     \label{img:gui}
 \end{figure}
-
+2 pav. vaizduojama grafinės sąsajos elementų diagrama. 
 \section{Užduotys}
-
+Šiame skyriuje pateikiamos sistemos užduotys. Aprašomi pagrindiniai ir alternatyvūs jų atlikimo scenarijai.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.8]{img/UC}
@@ -360,55 +365,60 @@
 \end{figure}
 
 \subsection{Naudotojo sąsajos užduotys}
-\subsubsection{UC1 "Registruotis sistemoje"}
-Naudotojas prisijungimo lange spaudžia "Užsiregistruoti", atsiveria registravimosi langas. Jame naudotojas į atskirus laukelius suveda privalomus duomenis: el. pašto adresą, slaptažodį, vardą, pavardę, gyvenamosios vietos adresą bei telefono numerį. Viską suvedęs, naudotojas spaudžia "Registruotis" ir sistema atveria pagrindinį programėlės langą. Užsiregistravęs naudotojas pagrindiniame lange automatiškai laikomas prisijungusiu.
-\subsubsection{UC2 "Prisijungti prie sistemos"}
-Įsijungęs programėlę neprisijungęs naudotojas iš karto mato prisijugimo langą, kuriame suveda prisijungimo duomenis: el. pašto adresą bei slaptažodį. Suvedęs duomenis naudotojas spaudžia "Prisijungti", tada sistema patikrina, ar įvesti duomenys teisingi. Jei duomenys suvesti teisingai, atsidaro pagrindinis programėlės langas, o naudotojas nuo to momento, kai prisijungė, iki to momento, kai atsijungs, laikomas prisijungusiu.
-Naudotojas prisijungimo lange neteisingai įveda prisijungimo duomenis, tada sistema praneša naudotojui, kad duomenys buvo įvesti neteisingai, bei vėl atvaizduoja prisijungimo langą, kad naudotojas galėtų bandyti prisijungti dar kartą.
-\subsubsection{UC3 "Atnaujinti savo duomenis"}
-Naudotojas lange "Mano paskyra" spaudžia "Atnaujinti duomenis", tada atveriamas paskyros atnaujinimo langas, kuriame vaizduojami esami paskyros duomenys. Esamus paskyros duomenis naudotojas redaguoja ir baigęs redaguoti spaudžia "Atnaujinti". Tada sistema atnaujina duomenis duomenų bazėje, praneša naudotojui, kad duomenys atnaujinti sėkmingai, ir atvaizduoja langą "Mano paskyra" su atnaujintais duomenimis.
-Naudotojas paskyros atnaujinimo lange suveda netinkamus duomenis, tada sistema praneša naudotojui, kad duomenys įvesti neteisingai, ir atvaizduoja paskyros atnaujinimo langą, kad naudotojas galėtų suvesti duomenis dar kartą.
-\subsubsection{UC4 "Prašyti priminti slaptažodį"}
-Naudotojas prisijungimo lange spaudžia "Pamiršau slaptažodį", tada sistema atvaizduoja slaptažodžio priminimo langą, kuriame naudotojas suveda norimos paskyros el. pašto adresą ir spaudžia "Gauti slaptažodį", tada sistema patikrina el. pašto adresą ir, jei toks naudotojas(su tokiu el. pašto adresu) egzistuoja duomenų bazėje, išsiunčia šiuo el. pašto adresu laišką su naudotojo slaptažodžiu.
-Naudotojas slaptažodžio priminimo lange įveda netinkamą el. pašto adresą, tada sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra, ir atvaizduoja slaptažodžio priminimo langą, kad naudotojas dar kartą galėtų suvesti el. paštą.
-\subsubsection{UC5 "Atsijungti nuo sistemos"}
-Naudotojas lange "Mano paskyra" spaudžia "Atsijungti", tada sistema pakeičia naudotojo būseną į "neprisijungęs" ir atvaizduoja prisijungimo langą.
-\subsubsection{UC6 "Pateikti pagalbos prašymo užklausą"}
-Naudotojas pagrindiniame lange spaudžia "Prašyti pagalbos", tada sistema atvaizduoja pagalbos prašymo užpildymo langą. Naudotojas užpildo prašymą, suvesdamas reikiamus duomenis ir spaudžia "Pateikti", tada sistema sukuria naują darbą duomenų bazėje pagal pateiktą prašymą ir praneša naudotojui, kad darbas sukurtas.
-\subsubsection{UC7 "Atlikti esamų darbų paiešką"}
-Pagrindiniame lange naudotojas laukelyje "Filtruoti pagal žymę" įveda norimą žymę, tada sistema suranda visus darbus, pažymėtus tokia žyme, ir atvaizduoja šių darbų sąrašą visų darbų lange.
-Naudotojas laukelyje "Filtruoti pagal žymę" įveda neegzistuojančią žymę, tada sistema praneša naudotojui, kad nėra darbų, pažymėtų šia žyme, ir atvaizduoja visų darbų langą.
-\subsubsection{UC8 "Peržiūrėti esamų darbų sąrašą"}
-Prisijungęs naudotojas, įsijungęs programėlę pagrindiniame lange mato visų darbų sąrašą.
-\subsubsection{UC9 "Pasirinkti atlikti darbą"}
-Darbo peržiūros lange naudotojas spaudžia "Padėti", tada sistema siunčia darbo atlikimo užklausą darbą pateikusiajam naudotojui. Darbą pateikęs naudotojas darbo atlikimo užklausos lange spaudžia "Patvirtinti", tada sistema pakeičia darbo būseną duomenų bazėje ir paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju. Sistema mygtuką "Padėti" keičia į mygtuką "Atšaukti". Sistema pasirinktą darbą įtraukia į naudotojo pasirinktų darbų sąrašą.
-Darbą pateikęs naudotojas darbo atlikimo užklausos lange spaudžia "Atmesti", tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
-\subsubsection{UC10 "Patvirtinti atliekamą darbą"}
-Naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia "Patvirtinti", tada sistema siunčia pranešimą darbą pasirinkusiajam naudotojui, pakeičia darbo būseną duomenų bazėje ir paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju.
-Naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia "Atmesti", tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
-\subsubsection{UC11 "Atšaukti pasirinktą darbą"}
-Naudotojas darbo peržiūros lange spaudžia "Atšaukti", tada sistema pakeičia darbo būseną duomenų bazėje bei praneša darbą pateikusiajam, kad darbo atlikimas buvo atšauktas.
-\subsubsection{UC12 "Įvertinti kitą naudotoją"}
-Naudotojas atlikto darbo lange pasirenka atlikto darbo įvertinimą iš galimų variantų ir spaudžia "Įvertinti", tada sistema pasirinktą įvertinimą įveda į duomenų bazę.
-\subsubsection{UC13 "Peržiūrėti kito naudotojo paskyrą"}
-1. Darbo peržiūros lange naudotojas spaudžia ant darbą pateikusiojo naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
-2. Visų naudotojų reitingo lange naudotojas spaudžia ant pasirinkto naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
-\subsubsection{UC14 "Peržiūrėti individualizuotus darbų pasiūlymus"}
-Naudotojas lange "Mano darbai" mato individualizuotus darbų pasiūlymus.
-\subsubsection{UC15 "Peržiūrėti atliktų darbų istoriją"}
-Naudotojas šoniniame meniu spaudžia "Atlikti darbai", tada sistema atvaizduoja atliktų darbų langą, kuriame pateikiami naudotojo atlikti darbai. 
-\subsubsection{UC16 "Peržiūrėti atsiskaitymų istorija"}
-Naudotojas paskyros lange spaudžia "Atsiskaitymų istorija", tada sistema atvaizduoja visus buvusius  atsiskaitymus už atliktus darbus atsiskaitymų istorijos lange.
-\subsubsection{UC17 "Peržiūrėti savo reitingą"}
-Naudotojas paskyros lange mato savo reitingą.
-\subsubsection{UC18 "Peržiūrėti naudotojų reitingų lentelę"}
-Naudotojas pšoniniame meniu spaudžia "Visų naudotojų reitingas", tada sistema atvaizduoja visų naudotojų reitingo langą, kuriame pateikiamas visų naudotojų sąrašas surikiuotas pagal reitingą.
-\subsubsection{UC19 "Peržiūrėti pasirinktų darbų sąrašą"}
-Naudotojas šoniniame meniu spaudžia "Mano darbai", tada sistema atvaizduoja langą "Mano darbai", kuriame pateikiamas naudotojo pasirinktų darbų sąrašas.
-\subsubsection{UC20 "Peržiūrėti pateiktų darbų sąrašą"}
-Naudotojas šoniniame meniu spaudžia "Mano darbai", tada sistema atvaizduoja langą "Mano darbai", kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
-
+Šiame poskyryje aprašomi naudotojo sąsajos užduočių pagrindiniai ir alternatyvūs scenarijai.
+\subsubsection{UC1 „Registruotis sistemoje“}
+Naudotojas „Pradiniame lange“ spaudžia „Registracija“, atsiveria „Registracijos langas“. Jame naudotojas į atskirus laukelius suveda privalomus duomenis: el. pašto adresą, slaptažodį, vardą, pavardę, gyvenamosios vietos adresą bei telefono numerį. Viską suvedęs, naudotojas spaudžia „Registruotis“ ir sistema atveria „Pagrindinį langą“. Užsiregistravęs naudotojas „Pagrindiniame lange“ automatiškai laikomas prisijungusiu.
+\subsubsection{UC2 „Prisijungti prie sistemos“}
+Įsijungęs programėlę neprisijungęs naudotojas iš karto mato „Pradinį langą“, kuriame suveda prisijungimo duomenis: el. pašto adresą bei slaptažodį. Suvedęs duomenis naudotojas spaudžia „Prisijungti“, tada sistema patikrina, ar įvesti duomenys teisingi. Jei duomenys suvesti teisingai, atsidaro „Pagrindinis langas“, o naudotojas nuo to momento, kai prisijungė, iki to momento, kai atsijungs, laikomas prisijungusiu. \par
+\textbf{Alternatyvus scenarijus}: naudotojas „Pradiniame lange“ neteisingai įveda prisijungimo duomenis, tada sistema praneša naudotojui, kad duomenys buvo įvesti neteisingai, bei vėl atvaizduoja „Pradinį langą“, kad naudotojas galėtų bandyti prisijungti dar kartą.
+\subsubsection{UC3 „Atnaujinti savo duomenis“}
+Naudotojas lange „Mano profilis“ spaudžia „Atnaujinti duomenis“, tada atveriamas langas „Atnaujnti duomenis“, kuriame vaizduojami esami paskyros duomenys. Esamus paskyros duomenis naudotojas redaguoja ir baigęs redaguoti spaudžia „Išsaugoti pakeitimus“. Tada sistema atnaujina duomenis duomenų bazėje, praneša naudotojui, kad duomenys atnaujinti sėkmingai, ir atvaizduoja langą „Mano profilis“ su atnaujintais duomenimis. \par
+\textbf{Alternatyvus scenarijus}: naudotojas lange „Atnaujinti duomenis“ suveda netinkamus duomenis, tada sistema praneša naudotojui, kad įvesti duomenys yra netinkami, ir atvaizduoja langą „Atnaujinti duomenis“, kad naudotojas galėtų suvesti duomenis dar kartą.
+\subsubsection{UC4 „Prašyti priminti slaptažodį“}
+Naudotojas „Pradiniame lange“ spaudžia „Pamiršote slaptažodį?“, tada sistema atvaizduoja „Slaptažodžio priminimo langą“, kuriame naudotojas suveda norimos paskyros el. pašto adresą ir spaudžia „Patvirtinti“, tada sistema patikrina el. pašto adresą ir, jei toks naudotojas(su tokiu el. pašto adresu) egzistuoja duomenų bazėje, išsiunčia šiuo el. pašto adresu laišką su naudotojo slaptažodžiu. \par
+\textbf{Alternatyvus scenarijus}: naudotojas „Slaptažodžio priminimo lange“ įveda netinkamą el. pašto adresą, tada sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra, ir atvaizduoja „Slaptažodžio priminimo langą“, kad naudotojas dar kartą galėtų suvesti el. paštą.
+\subsubsection{UC5 „Atsijungti nuo sistemos“}
+Naudotojas lange „Mano profilis“ spaudžia „Atsijungti“, tada sistema pakeičia naudotojo būseną į „neprisijungęs“ ir atvaizduoja „Pradinį langą“.
+\subsubsection{UC6 „Pateikti pagalbos prašymo užklausą“}
+Naudotojas „Pagrindiniame lange“ arba šoniniame meniu spaudžia „Prašyti pagalbos“, tada sistema atvaizduoja langą „Prašyti pagalbos“. Naudotojas užpildo prašymą, suvesdamas reikiamus duomenis ir spaudžia „Pateikti“, tada sistema sukuria naują darbą duomenų bazėje pagal pateiktą prašymą ir praneša naudotojui, kad darbas sukurtas.
+\subsubsection{UC7 „Atlikti esamų darbų paiešką“}
+„Pagrindiniame lange“ naudotojas spaudžia „Ieškoti darbo“, tada sistema atvaizduoja langą „Darbo paieška“, tada naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema suranda visus darbus, atitinkančius tokius paieškos duomenis, ir atvaizduoja šių darbų sąrašą lange „Darbų sąrašas“. \par
+\textbf{Alternatyvus scenarijus}: naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema duomenų bazėje neranda paieškos duomenis atitinkančių darbų ir praneša naudotojui, kad nėra darbų, atitinkančių pateiktus paieškos duomenis, ir atvaizduoja langą „Darbų sąrašas“ su visais esamais darbais.
+\subsubsection{UC8 „Peržiūrėti esamų darbų sąrašą“}
+Prisijungęs naudotojas šoniniame meniu spaudžia „Darbų sąrašas“, tada sistema atvaizduoja langą „Darbų sąrašas“, kuriame vaizduojami visi esami darbai.
+\subsubsection{UC9 „Pasirinkti atlikti darbą“}
+„Darbo peržiūros lange“ naudotojas spaudžia „Atlikti darbą“, tada sistema siunčia darbo atlikimo užklausą darbą pateikusiajam naudotojui, o darbą pasirinkusiam naudotojui sistema praneša, kad laukiama darbą pateikusiojo patvirtinimo. Darbą pateikęs naudotojas darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema pakeičia darbo būseną duomenų bazėje ir paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju. Sistema mygtuką „Atlikti darbą“ keičia į mygtuką „Atšaukti“. Sistema pasirinktą darbą įtraukia į naudotojo pasirinktų darbų sąrašą. \par
+\textbf{Alternatyvus scenarijus}: darbą pateikęs naudotojas darbo atlikimo užklausos lange spaudžia „Atmesti“, tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
+\subsubsection{UC10 „Patvirtinti atliekamą darbą“}
+Naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema siunčia pranešimą darbą pasirinkusiajam naudotojui, pakeičia darbo būseną duomenų bazėje ir paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju. \par
+\textbf{Alternatyvus scenarijus}: naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Atmesti“, tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
+\subsubsection{UC11 „Atšaukti pasirinktą darbą“}
+Naudotojas „Darbo peržiūros lange“ spaudžia „Atšaukti“, tada sistema pakeičia darbo būseną duomenų bazėje bei praneša darbą pateikusiajam, kad darbo atlikimas buvo atšauktas.
+\subsubsection{UC12 „Įvertinti kitą naudotoją“}
+Naudotojas „Atlikto darbo lange“ pasirenka atlikto darbo įvertinimą iš galimų variantų ir spaudžia „Įvertinti“, tada sistema pasirinktą įvertinimą įveda į duomenų bazę.
+\subsubsection{UC13 „Peržiūrėti kito naudotojo paskyrą“}
+1. „Darbo peržiūros lange“ naudotojas spaudžia ant darbą pateikusiojo naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
+2. „Naudotojų reitingo lange“ naudotojas spaudžia ant pasirinkto naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
+\subsubsection{UC14 „Peržiūrėti atliktų darbų istoriją“}
+Naudotojas šoniniame meniu spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai“, tada naudotojas spaudžia „Atliekami darbai“, tada sistema atvaizduoja langą „Mano darbai 2“, kuriame pateikiami naudotojo pasirinkti atlikti, atliekami bei atlikti darbai. 
+\subsubsection{UC15 „Peržiūrėti atsiskaitymų istorija“}
+Naudotojas lange „Mano profilis“ spaudžia „Atsiskaitymų istorija“, tada sistema atvaizduoja langą „Atsiskaitymų istorija“, kuriame pateikiami visi atsiskaitymai už atliktus darbus.
+\subsubsection{UC16 „Peržiūrėti savo reitingą“}
+1. Naudotojas lange „Mano profilis“ mato savo reitingą. \\
+2. Naudotojas lange „Mano profilis“ spaudžia „Reitingas“, tada sistema atvaizduoja langą „Reitingas“, kuriame pateikti visi gauti įvertinimai bei įvertinimų vidurkis(reitingas).
+\subsubsection{UC17 „Peržiūrėti naudotojų reitingų lentelę“}
+Naudotojas šoniniame meniu spaudžia „Naudotojų reitingas“, tada sistema atvaizduoja „Naudotojų reitingo“ langą, kuriame pateikiamas visų naudotojų sąrašas surikiuotas pagal reitingą.
+\subsubsection{UC18 „Peržiūrėti pasirinktų darbų sąrašą“}
+Naudotojas šoniniame meniu arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, tada naudotojas spaudžia „Atliekami darbai“, tada sistema atvaizduoja langą „Mano darbai 2“, kuriame pateikiamas naudotojo pasirinktų darbų sąrašas.
+\subsubsection{UC19 „Peržiūrėti pateiktų darbų sąrašą“}
+Naudotojas šoniniame meniu arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
+\subsubsection{UC20 „Ištrinti pateiktą darbą“}
+Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“, tada sistema perklausia naudotojo, ar tikrai jis nori ištrinti pateiktą darbą, tada naudotojas spaudžia „Taip“, tada sistema patikrina, ar darbo nėra pasirinkęs, ar nėra pradėjęs vykdyti kitą naudotojas. Jei nėra, tai sistema ištrina darbą iš duomenų bazės ir praneša naudotojui, kad darbą pašalintas sėkmingai.
+\textbf{Alternatyvūs scenarijai}: \\
+1. Naudotojo norimą ištrinti darbą yra pasirinkęs atlikti kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad pirmiausiai reikia atšaukti darbo atlikimo užklausą, o tada galima ištrinti darbą. Tada sistema atvaizduoja „Darbo peržiūros langą“.\\ 
+2. Naudotojo norimą ištrinti darbą jau atlieka kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad darbo ištrinti negalima, nes jis jau yra atliekamas, ir atvaizduoja „Darbo peržiūros langą“.
 \subsection{Reikalavimų - Užduočių atsekamumo matrica}
+Šiame poskyryje pateikiama užduočių atsekamumo matrica, kurioje užduotys siejamos su funkciniais reikalavimais.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.8]{img/UC-matrix}
@@ -417,7 +427,7 @@ Naudotojas šoniniame meniu spaudžia "Mano darbai", tada sistema atvaizduoja la
 \end{figure}
 
 \sectionnonum{Išvados}
-Remiantis ICONIX procesu, šiame dokumente surašyti visi reikalavimai mobiliajai programėlei "Help4Help". Taip pat sukurtas ir pateiktas dalykinės srities modelis, aprašyti užduočių vykdymo scenarijai bei sukurtos atsekamumo matricos.
+Remiantis ICONIX procesu, buvo peržiūrėti ir šiame dokumente surašyti visi reikalavimai mobiliajai programėlei „Help4Help". Taip pat sukurtas ir pateiktas dalykinės srities modelis be naudotojo užduočių diagrama, aprašyti užduočių vykdymo scenarijai bei sukurtos atsekamumo matricos.
 
 \printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
 % literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų
