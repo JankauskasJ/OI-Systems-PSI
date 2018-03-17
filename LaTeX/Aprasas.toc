@@ -82,56 +82,60 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.}Struktūrinis dalykinės srities modelis}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Užduotys}{14}
+\contentsline {subsection}{\numberline {2.1.}Struktūrinės dalykinės srities modelio esybės}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.}Naudotojo sąsajos užduotys}{14}
+\contentsline {subsection}{\numberline {2.2.}Esybių - Užduočių atsekamumo matrica}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.}UC1 „Registruotis sistemoje“}{15}
+\contentsline {section}{\numberline {3.}Užduotys}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.}UC2 „Prisijungti prie sistemos“}{15}
+\contentsline {subsection}{\numberline {3.1.}Naudotojo sąsajos užduotys}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.3.}UC3 „Atnaujinti savo duomenis“}{15}
+\contentsline {subsubsection}{\numberline {3.1.1.}UC1 „Registruotis sistemoje“}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.4.}UC4 „Prašyti priminti slaptažodį“}{15}
+\contentsline {subsubsection}{\numberline {3.1.2.}UC2 „Prisijungti prie sistemos“}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.5.}UC5 „Atsijungti nuo sistemos“}{16}
+\contentsline {subsubsection}{\numberline {3.1.3.}UC3 „Atnaujinti savo duomenis“}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.6.}UC6 „Pateikti pagalbos prašymo užklausą“}{16}
+\contentsline {subsubsection}{\numberline {3.1.4.}UC4 „Prašyti priminti slaptažodį“}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.7.}UC7 „Atlikti esamų darbų paiešką“}{16}
+\contentsline {subsubsection}{\numberline {3.1.5.}UC5 „Atsijungti nuo sistemos“}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.8.}UC8 „Peržiūrėti esamų darbų sąrašą“}{16}
+\contentsline {subsubsection}{\numberline {3.1.6.}UC6 „Pateikti pagalbos prašymo užklausą“}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.9.}UC9 „Pasirinkti atlikti darbą“}{16}
+\contentsline {subsubsection}{\numberline {3.1.7.}UC7 „Atlikti esamų darbų paiešką“}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.10.}UC10 „Patvirtinti atliekamą darbą“}{16}
+\contentsline {subsubsection}{\numberline {3.1.8.}UC8 „Peržiūrėti esamų darbų sąrašą“}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.11.}UC11 „Atšaukti pasirinktą darbą“}{17}
+\contentsline {subsubsection}{\numberline {3.1.9.}UC9 „Pasirinkti atlikti darbą“}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.12.}UC12 „Įvertinti kitą naudotoją“}{17}
+\contentsline {subsubsection}{\numberline {3.1.10.}UC10 „Patvirtinti atliekamą darbą“}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.13.}UC13 „Peržiūrėti kito naudotojo paskyrą“}{17}
+\contentsline {subsubsection}{\numberline {3.1.11.}UC11 „Atšaukti pasirinktą darbą“}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.14.}UC14 „Peržiūrėti atliktų darbų istoriją“}{17}
+\contentsline {subsubsection}{\numberline {3.1.12.}UC12 „Įvertinti kitą naudotoją“}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.15.}UC15 „Peržiūrėti atsiskaitymų istorija“}{17}
+\contentsline {subsubsection}{\numberline {3.1.13.}UC13 „Peržiūrėti kito naudotojo paskyrą“}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.16.}UC16 „Peržiūrėti savo reitingą“}{17}
+\contentsline {subsubsection}{\numberline {3.1.14.}UC14 „Peržiūrėti atliktų darbų istoriją“}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.17.}UC17 „Peržiūrėti naudotojų reitingų lentelę“}{17}
+\contentsline {subsubsection}{\numberline {3.1.15.}UC15 „Peržiūrėti atsiskaitymų istorija“}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.18.}UC18 „Peržiūrėti pasirinktų darbų sąrašą“}{18}
+\contentsline {subsubsection}{\numberline {3.1.16.}UC16 „Peržiūrėti savo reitingą“}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.19.}UC19 „Peržiūrėti pateiktų darbų sąrašą“}{18}
+\contentsline {subsubsection}{\numberline {3.1.17.}UC17 „Peržiūrėti naudotojų reitingų lentelę“}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.20.}UC20 „Ištrinti pateiktą darbą“}{18}
+\contentsline {subsubsection}{\numberline {3.1.18.}UC18 „Peržiūrėti pasirinktų darbų sąrašą“}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Reikalavimų - Užduočių atsekamumo matrica}{18}
+\contentsline {subsubsection}{\numberline {3.1.19.}UC19 „Peržiūrėti pateiktų darbų sąrašą“}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Išvados}{20}
+\contentsline {subsubsection}{\numberline {3.1.20.}UC20 „Ištrinti pateiktą darbą“}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\MakeUppercase {Priedai}}{20}
+\contentsline {subsection}{\numberline {3.2.}Reikalavimų - Užduočių atsekamumo matrica}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{1 priedas.\nobreakspace {}Rastos klaidos ir jų sprendimai}{21}
+\contentsline {section}{Išvados}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{2 priedas.\nobreakspace {}Žodynas}{22}
+\contentsline {section}{\MakeUppercase {Priedai}}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{1 priedas.\nobreakspace {}Rastos klaidos ir jų sprendimai}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{2 priedas.\nobreakspace {}Žodynas}{35}

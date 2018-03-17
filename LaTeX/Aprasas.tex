@@ -51,7 +51,7 @@
 	\item \textbf{FR1} Registruotis sistemoje (privalomi duomenys: el. pašto adresas, slaptažodis, vardas, pavardė, telefono numeris).
 	\item \textbf{FR2} Prisijungti prie sistemos (privalomi duomenys: el. pašto adresas, slaptažodis).
 	\item \textbf{FR3} Atnaujinti savo duomenis (pasirinktinai: el. pašto adresas, slaptažodis, gyvenamosios vietos adresas, telefono numeris).
-	\item \textbf{FR4} Prašyti pakeisti užmirštą slaptažodį.
+	\item \textbf{FR4} Prašyti priminti užmirštą slaptažodį.
 	\item \textbf{FR5} Atsijungti nuo sistemos.
 	\item \textbf{FR6} Pateikti pagalbos prašymo užklausą
 	\item \textbf{FR7} Atlikti esamų darbų paiešką (sąrašą surikiuoti pagal pasirinktus kriterijus ar kategorijas).
@@ -341,54 +341,180 @@
 
 \section{Struktūrinis dalykinės srities modelis}
 Šiame skyriuje pateikiamas struktūrinis dalykinės srities modelis.
+\subsection {Struktūrinės dalykinės srities modelio esybės}
+Šiame poskyryje pateikiamos struktūrinės dalykinės srities esybių diagramos ir jų aprašymai
 \begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.7]{img/Entities}
-    \caption{Esybių diagrama}
-    \label{img:entities}
+	\centering
+	\includegraphics[scale=0.7]{img/Entities}
+	\caption{Esybių diagrama}
+	\label{img:entities}
 \end{figure}
 1 pav. vaizduojama sistemos esybių diagrama.
+
 \begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.7]{img/GUI}
-    \caption{Grafinės sąsajos elementų diagrama}
-    \label{img:gui}
+	\centering
+	\includegraphics[scale=0.7]{img/GUI}
+	\caption{Grafinės sąsajos elementų diagrama}
+	\label{img:gui}
 \end{figure}
 2 pav. vaizduojama grafinės sąsajos elementų diagrama. 
+
+\begin{table}[H]\footnotesize
+	\centering
+	\caption{Struktūrinio dalykinės srities modelio elementai}
+	{\rowcolors{2}{yellow!50}{yellow!40}
+	\setlength{\arrayrulewidth}{0.25mm}
+	{\begin{tabular}{|c|m{5.75cm}|m{5.75cm}|} \hline
+		Kodas & Elementas & Aprašymas \\
+		\hline
+		\textbf{E1} & Paskyra & Naudotojo paskyra \\
+		\textbf{E2} & Registracijos duomenys & Duomenys reikalingi naudotojui registruojantis prie sistemos \\
+		\textbf{E3} & Virtualūs pinigai & Virtuali valiuta naudojama atsiskaityti už įvykdytus darbus \\
+		\textbf{E4} & Prisijungimo duomenys & Duomenys reikalingi naudotojo autentifikavimui prisijungimo metu \\
+		\textbf{E5} & Reitingas & Naudotojo įvertinimas \\
+		\textbf{E6} & Reitingų istorija & Naudotojo reitingo kitimo istorija \\
+		\textbf{E7} & Pagalbos prašymas & Naudotojo pateikta užduotis, už kurią jis yra pasirįžęs sumokėti pasirinktą virtualių pinigų sumą \\
+		\textbf{E8} & Darbų sąrašas & Visų naudotojų pateiktų pagalbos prašymų sąrašas \\
+		\textbf{E9} & Darbas & Pagalbos prašymas \\
+		\textbf{E10} & Atliekamas darbas & Naudotojo pasirinktas atlikti darbas \\
+		\textbf{E11} & Atliktas darbas & Naudotojo atliktas darbas \\
+		\textbf{E12} & Atliktų darbų istorija & Visų naudotojo atliktų darbų sąrašas \\
+		\hline
+		\textbf{G1} & Pagrindinis langas & Langas matomas naudotojui prisijungus prie savo paskyros \\
+		\textbf{G2} & Prisijungimo langas & Langas matomas naudotojui įsijungus aplikaciją, naudojamas identifikuoti naudotoją \\
+		\textbf{G3} & Paskyros atnaujinimo langas & Langas naudojamas naudotojo paskyros duomenų atnaujinimui \\
+		\textbf{G4} & Slaptažodžio priminimo langas & Langas matomas, kai naudotojas prisijungimo metu užmiršta savo slaptažodį \\
+		\textbf{G5} & Pagalbos prašymo užpildymo langas & Langas skirtas naudotojo pagalbos prašymui \\
+		\textbf{G6} & Mano Paskyra & Langas kuriame naudotojas mato savo paskyros duomenis \\
+		\textbf{G7} & Visų naudotojų reitingas & Langas kuriame matomas visų naudotojų reitingų sąrašas \\
+		\textbf{G8} & Darbų peržiūros langas & Langas kuriame matomas darbų sąrašas \\
+		\textbf{G9} & Kito naudotojo paskyros langas & Langas kuriame naudotojas mato kito naudotojo paskyros informaciją \\
+		\hline
+	\end{tabular}}
+	}
+	\label{tab:entity table}
+\end{table}
+
+\subsection{Esybių - Užduočių atsekamumo matrica}
+Šiame poskyryje pateikiama esybių atsekamumo matrica, kurioje esybės siejamos su funkciniais reikalavimais.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{img/Entity-matrix}
+    \caption{Esybių-Reikalavimų atsekamumo matrica}
+    \label{img:entity-matrix}
+\end{figure}
+
 \section{Užduotys}
 Šiame skyriuje pateikiamos sistemos užduotys. Aprašomi pagrindiniai ir alternatyvūs jų atlikimo scenarijai.
 \begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.8]{img/UC}
-    \caption{Naudotojo užduočių diagrama}
-    \label{img:uc}
+	\centering
+	\includegraphics[scale=0.8]{img/UC}
+	\caption{Naudotojo užduočių diagrama}
+	\label{img:uc}
 \end{figure}
 
 \subsection{Naudotojo sąsajos užduotys}
 Šiame poskyryje aprašomi naudotojo sąsajos užduočių pagrindiniai ir alternatyvūs scenarijai.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/02-Registracijos-langas}
+	\caption{Registracijos langas}
+	\label{img:reg}
+\end{figure}
 \subsubsection{UC1 „Registruotis sistemoje“}
 Naudotojas „Pradiniame lange“ spaudžia „Registracija“, atsiveria „Registracijos langas“. Jame naudotojas į atskirus laukelius suveda privalomus duomenis: el. pašto adresą, slaptažodį, vardą, pavardę, gyvenamosios vietos adresą bei telefono numerį. Viską suvedęs, naudotojas spaudžia „Registruotis“ ir sistema atveria „Pagrindinį langą“. Užsiregistravęs naudotojas „Pagrindiniame lange“ automatiškai laikomas prisijungusiu.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/01-Pradinis-langas}
+	\caption{Pradinis langas}
+	\label{img:login}
+\end{figure}
 \subsubsection{UC2 „Prisijungti prie sistemos“}
 Įsijungęs programėlę neprisijungęs naudotojas iš karto mato „Pradinį langą“, kuriame suveda prisijungimo duomenis: el. pašto adresą bei slaptažodį. Suvedęs duomenis naudotojas spaudžia „Prisijungti“, tada sistema patikrina, ar įvesti duomenys teisingi. Jei duomenys suvesti teisingai, atsidaro „Pagrindinis langas“, o naudotojas nuo to momento, kai prisijungė, iki to momento, kai atsijungs, laikomas prisijungusiu. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas „Pradiniame lange“ neteisingai įveda prisijungimo duomenis, tada sistema praneša naudotojui, kad duomenys buvo įvesti neteisingai, bei vėl atvaizduoja „Pradinį langą“, kad naudotojas galėtų bandyti prisijungti dar kartą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/Mano_profilis/00-Mano-profilis}
+	\caption{Mano profilis}
+	\label{img:profile}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/Mano_profilis/03-Duomenų-atnaujinimas}
+	\caption{Duomenų atnaujinimo langas}
+	\label{img:update profile}
+\end{figure}
 \subsubsection{UC3 „Atnaujinti savo duomenis“}
 Naudotojas lange „Mano profilis“ spaudžia „Atnaujinti duomenis“, tada atveriamas langas „Atnaujnti duomenis“, kuriame vaizduojami esami paskyros duomenys. Esamus paskyros duomenis naudotojas redaguoja ir baigęs redaguoti spaudžia „Išsaugoti pakeitimus“. Tada sistema atnaujina duomenis duomenų bazėje, praneša naudotojui, kad duomenys atnaujinti sėkmingai, ir atvaizduoja langą „Mano profilis“ su atnaujintais duomenimis. 
 \par\textbf{Alternatyvus scenarijus}: naudotojas lange „Atnaujinti duomenis“ suveda netinkamus duomenis, tada sistema praneša naudotojui, kad įvesti duomenys yra netinkami, ir atvaizduoja langą „Atnaujinti duomenis“, kad naudotojas galėtų suvesti duomenis dar kartą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/03-Slaptažodžio-priminimo-langas}
+	\caption{Slaptažidžio priminimo langas}
+	\label{img:forget pass}
+\end{figure}
 \subsubsection{UC4 „Prašyti priminti slaptažodį“}
 Naudotojas „Pradiniame lange“ spaudžia „Pamiršote slaptažodį?“, tada sistema atvaizduoja „Slaptažodžio priminimo langą“, kuriame naudotojas suveda norimos paskyros el. pašto adresą ir spaudžia „Patvirtinti“, tada sistema patikrina el. pašto adresą ir, jei toks naudotojas(su tokiu el. pašto adresu) egzistuoja duomenų bazėje, išsiunčia šiuo el. pašto adresu laišką su naudotojo slaptažodžiu. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas „Slaptažodžio priminimo lange“ įveda netinkamą el. pašto adresą, tada sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra, ir atvaizduoja „Slaptažodžio priminimo langą“, kad naudotojas dar kartą galėtų suvesti el. paštą.
 \subsubsection{UC5 „Atsijungti nuo sistemos“}
 Naudotojas lange „Mano profilis“ spaudžia „Atsijungti“, tada sistema pakeičia naudotojo būseną į „neprisijungęs“ ir atvaizduoja „Pradinį langą“.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/Prašyti_pagalbos/00-Prašyti-pagalbos}
+	\caption{Pagalbos prašymo langas}
+	\label{img:help}
+\end{figure}
 \subsubsection{UC6 „Pateikti pagalbos prašymo užklausą“}
 Naudotojas „Pagrindiniame lange“ arba šoniniame meniu spaudžia „Prašyti pagalbos“, tada sistema atvaizduoja langą „Prašyti pagalbos“. Naudotojas užpildo prašymą, suvesdamas reikiamus duomenis ir spaudžia „Pateikti“, tada sistema sukuria naują darbą duomenų bazėje pagal pateiktą prašymą ir praneša naudotojui, kad darbas sukurtas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/12-Pagrindinis-langas}
+	\caption{Pagrindinis langas}
+	\label{img:main}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/07-Darbo-paieška}
+	\caption{Darbo paieškos langas}
+	\label{img:find work}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/09-Darbų-sąrašas}
+	\caption{Darbo paieškos langas}
+	\label{img:work list}
+\end{figure}
 \subsubsection{UC7 „Atlikti esamų darbų paiešką“}
 „Pagrindiniame lange“ naudotojas spaudžia „Ieškoti darbo“, tada sistema atvaizduoja langą „Darbo paieška“, tada naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema suranda visus darbus, atitinkančius tokius paieškos duomenis, ir atvaizduoja šių darbų sąrašą lange „Darbų sąrašas“. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema duomenų bazėje neranda paieškos duomenis atitinkančių darbų ir praneša naudotojui, kad nėra darbų, atitinkančių pateiktus paieškos duomenis, ir atvaizduoja langą „Darbų sąrašas“ su visais esamais darbais.
 \subsubsection{UC8 „Peržiūrėti esamų darbų sąrašą“}
 Prisijungęs naudotojas šoniniame meniu spaudžia „Darbų sąrašas“, tada sistema atvaizduoja langą „Darbų sąrašas“, kuriame vaizduojami visi esami darbai.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/6}
+	\caption{Pasirinktas darbas}
+	\label{img:selected job 1}
+\end{figure}
 \subsubsection{UC9 „Pasirinkti atlikti darbą“}
 „Darbo peržiūros lange“ naudotojas spaudžia „Atlikti darbą“, tada sistema siunčia darbo atlikimo užklausą darbą pateikusiajam naudotojui, o darbą pasirinkusiam naudotojui sistema praneša, kad laukiama darbą pateikusiojo patvirtinimo. Darbą pateikęs naudotojas darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema pakeičia darbo būseną duomenų bazėje ir paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju. Sistema mygtuką „Atlikti darbą“ keičia į mygtuką „Atšaukti“. Sistema pasirinktą darbą įtraukia į naudotojo pasirinktų darbų sąrašą. 
 \par \textbf{Alternatyvus scenarijus}: darbą pateikęs naudotojas darbo atlikimo užklausos lange spaudžia „Atmesti“, tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/2}
+	\caption{Pasirinktas darbas}
+	\label{img:selected job 2}
+\end{figure}
 \subsubsection{UC10 „Patvirtinti atliekamą darbą“}
 Naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema siunčia pranešimą darbą pasirinkusiajam naudotojui, pakeičia darbo būseną duomenų bazėje ir paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Atmesti“, tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
@@ -399,17 +525,59 @@ Naudotojas „Atlikto darbo lange“ pasirenka atlikto darbo įvertinimą iš ga
 \subsubsection{UC13 „Peržiūrėti kito naudotojo paskyrą“}
 1. „Darbo peržiūros lange“ naudotojas spaudžia ant darbą pateikusiojo naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
 2. „Naudotojų reitingo lange“ naudotojas spaudžia ant pasirinkto naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/Mano_profilis/07-Darbų-istorija}
+	\caption{Darbų istorijos langas}
+	\label{img:work history}
+\end{figure}
 \subsubsection{UC14 „Peržiūrėti atliktų darbų istoriją“}
-Naudotojas šoniniame meniu spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai“, tada naudotojas spaudžia „Atliekami darbai“, tada sistema atvaizduoja langą „Mano darbai 2“, kuriame pateikiami naudotojo pasirinkti atlikti, atliekami bei atlikti darbai. 
+Naudotojas šoniniame meniu spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai“, tada naudotojas spaudžia „Atliekami darbai“, tada sistema atvaizduoja langą „Mano darbai 2“, kuriame pateikiami naudotojo pasirinkti atlikti, atliekami bei atlikti darbai.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/Mano_profilis/05-Atsiskaitymų-istorija}
+	\caption{Atsiskaitymų istorijos langas}
+	\label{img:payment history}
+\end{figure}
 \subsubsection{UC15 „Peržiūrėti atsiskaitymų istorija“}
 Naudotojas lange „Mano profilis“ spaudžia „Atsiskaitymų istorija“, tada sistema atvaizduoja langą „Atsiskaitymų istorija“, kuriame pateikiami visi atsiskaitymai už atliktus darbus.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/Mano_profilis/06-Reitingas}
+	\caption{Reitingo langas}
+	\label{img:rating}
+\end{figure}
 \subsubsection{UC16 „Peržiūrėti savo reitingą“}
 1. Naudotojas lange „Mano profilis“ mato savo reitingą. \\
 2. Naudotojas lange „Mano profilis“ spaudžia „Reitingas“, tada sistema atvaizduoja langą „Reitingas“, kuriame pateikti visi gauti įvertinimai bei įvertinimų vidurkis(reitingas).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/10-Naudotojų-reitingas}
+	\caption{Visų naudotojų reitingų lentelė}
+	\label{img:rating table}
+\end{figure}
 \subsubsection{UC17 „Peržiūrėti naudotojų reitingų lentelę“}
 Naudotojas šoniniame meniu spaudžia „Naudotojų reitingas“, tada sistema atvaizduoja „Naudotojų reitingo“ langą, kuriame pateikiamas visų naudotojų sąrašas surikiuotas pagal reitingą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/06-Mano-darbai2}
+	\caption{Pasirinktų darbų lentelė}
+	\label{img:selected jobs table}
+\end{figure}
 \subsubsection{UC18 „Peržiūrėti pasirinktų darbų sąrašą“}
 Naudotojas šoniniame meniu arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, tada naudotojas spaudžia „Atliekami darbai“, tada sistema atvaizduoja langą „Mano darbai 2“, kuriame pateikiamas naudotojo pasirinktų darbų sąrašas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/ScreenShots/05-Mano-darbai1}
+	\caption{Pasirinktų darbų lentelė}
+	\label{img:requested jobs table}
+\end{figure}
 \subsubsection{UC19 „Peržiūrėti pateiktų darbų sąrašą“}
 Naudotojas šoniniame meniu arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
 \subsubsection{UC20 „Ištrinti pateiktą darbą“}
@@ -453,10 +621,11 @@ Remiantis ICONIX procesu, buvo peržiūrėti ir šiame dokumente surašyti visi 
 		\textbf{K2} & Aplikacija kuriama C\# programavimo kalba naudojant Visual Studio & Kalbą pakeisti į Java, o IDE į Android Studio \\
 		\textbf{K3} & Aplikacija turi pranešti apie atnaujinimus 12 valandų prieš jų išėjimą & Aplikacija vartotojui praneš tik išėjus atnaujinimams \\
 		\textbf{K4} & Registracijai reikalingas asmens kodas ir gyvenamosios vietos adresas & Nereikalauti asmens kodo ir gyvenamosios vietos adreso registracijos metu \\
+		\textbf{K5} & Naudotojui užmiršus slaptažodį, jis jį turėjo būtinai pakeisti & Naudotojui užmiršus slaptažodį, jis gali prašyti jį priminti \\
 		\hline
 	\end{tabular}}
 	}
-	\label{tab:table example}
+	\label{tab:mistake table}
 \end{table}
 
 \section{Žodynas}
@@ -477,7 +646,7 @@ Remiantis ICONIX procesu, buvo peržiūrėti ir šiame dokumente surašyti visi 
 		\hline
 	\end{tabular}}
 	}
-	\label{tab:table example}
+	\label{tab:dictionary}
 \end{table}
 	
 

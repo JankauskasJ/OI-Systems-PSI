@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6600 64-bit) (preloaded format=xelatex 2018.3.6)  16 MAR 2018 21:28
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6600 64-bit) (preloaded format=xelatex 2018.3.6)  17 MAR 2018 22:59
 entering extended mode
 **./Aprasas.tex
 (Aprasas.tex
@@ -1124,11 +1124,7 @@ Package biblatex Warning: Conflicting options.
 (biblatex)                'date=iso' requires 'seconds=true'.
 (biblatex)                Setting 'seconds=true' on input line 36.
 
-(Aprasas.aux
-
-LaTeX Warning: Label `tab:table example' multiply defined.
-
-)
+(Aprasas.aux)
 \openout1 = `Aprasas.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -1292,62 +1288,132 @@ reikalavimai mobiliajai aplikacijai
 File: img/Entities.jpg Graphic file (type bmp)
 <img/Entities.jpg>
 
-Overfull \hbox (3.72629pt too wide) in paragraph at lines 346--347
+Overfull \hbox (3.72629pt too wide) in paragraph at lines 348--349
  [][] 
  []
 
 File: img/GUI.jpg Graphic file (type bmp)
 <img/GUI.jpg>
 
-Overfull \hbox (20.52617pt too wide) in paragraph at lines 353--354
+Overfull \hbox (20.52617pt too wide) in paragraph at lines 356--357
  [][] 
  []
 
 [12
 
-] [13]
-File: img/UC.jpg Graphic file (type bmp)
-<img/UC.jpg>
- [14
-
-] [15] [16] [17]
-File: img/UC-matrix.png Graphic file (type bmp)
-<img/UC-matrix.png>
- [18] [19]
-
-LaTeX Warning: Empty bibliography on input line 432.
-
-[20
-
 ]
-Underfull \hbox (badness 2744) in paragraph at lines 453--453
-[]|\TU/texgyretermes(0)/m/n/10 Aplikacija kuriama C# programavimo
+Underfull \hbox (badness 1005) in paragraph at lines 388--389
+[]|\TU/texgyretermes(0)/m/n/10 Langas kuriame naudotojas mato savo
  []
 
-[21
 
-]
-Overfull \hbox (4.23141pt too wide) in paragraph at lines 468--481
+Underfull \hbox (badness 1721) in paragraph at lines 391--392
+[]|\TU/texgyretermes(0)/m/n/10 Langas kuriame naudotojas mato kito
+ []
+
+[13]
+File: img/Entity-matrix.png Graphic file (type bmp)
+<img/Entity-matrix.png>
+
+Overfull \hbox (7.33015pt too wide) in paragraph at lines 402--403
  [][] 
  []
 
-[22
+[14] [15]
+File: img/UC.jpg Graphic file (type bmp)
+<img/UC.jpg>
+File: img/ScreenShots/02-Registracijos-langas.png Graphic file (type bmp)
+<img/ScreenShots/02-Registracijos-langas.png>
+ [16
+
+]
+File: img/ScreenShots/01-Pradinis-langas.png Graphic file (type bmp)
+<img/ScreenShots/01-Pradinis-langas.png>
+ [17]
+File: img/ScreenShots/Mano_profilis/00-Mano-profilis.png Graphic file (type bmp
+)
+<img/ScreenShots/Mano_profilis/00-Mano-profilis.png>
+ [18]
+File: img/ScreenShots/Mano_profilis/03-Duomenų-atnaujinimas.png Graphic file (t
+ype bmp)
+<img/ScreenShots/Mano_profilis/03-Duomenų-atnaujinimas.png>
+ [19]
+File: img/ScreenShots/03-Slaptažodžio-priminimo-langas.png Graphic file (type b
+mp)
+<img/ScreenShots/03-Slaptažodžio-priminimo-langas.png>
+File: img/ScreenShots/Prašyti_pagalbos/00-Prašyti-pagalbos.png Graphic file (ty
+pe bmp)
+<img/ScreenShots/Prašyti_pagalbos/00-Prašyti-pagalbos.png>
+ [20]
+File: img/ScreenShots/12-Pagrindinis-langas.png Graphic file (type bmp)
+<img/ScreenShots/12-Pagrindinis-langas.png>
+ [21]
+File: img/ScreenShots/07-Darbo-paieška.png Graphic file (type bmp)
+<img/ScreenShots/07-Darbo-paieška.png>
+File: img/ScreenShots/09-Darbų-sąrašas.png Graphic file (type bmp)
+<img/ScreenShots/09-Darbų-sąrašas.png>
+ [22]
+File: img/ScreenShots/6.png Graphic file (type bmp)
+<img/ScreenShots/6.png>
+ [23]
+File: img/ScreenShots/2.png Graphic file (type bmp)
+<img/ScreenShots/2.png>
+ [24]
+File: img/ScreenShots/Mano_profilis/07-Darbų-istorija.png Graphic file (type bm
+p)
+<img/ScreenShots/Mano_profilis/07-Darbų-istorija.png>
+ [25]
+File: img/ScreenShots/Mano_profilis/05-Atsiskaitymų-istorija.png Graphic file (
+type bmp)
+<img/ScreenShots/Mano_profilis/05-Atsiskaitymų-istorija.png>
+ [26]
+File: img/ScreenShots/Mano_profilis/06-Reitingas.png Graphic file (type bmp)
+<img/ScreenShots/Mano_profilis/06-Reitingas.png>
+ [27]
+File: img/ScreenShots/10-Naudotojų-reitingas.png Graphic file (type bmp)
+<img/ScreenShots/10-Naudotojų-reitingas.png>
+ [28]
+File: img/ScreenShots/06-Mano-darbai2.png Graphic file (type bmp)
+<img/ScreenShots/06-Mano-darbai2.png>
+
+[29]
+File: img/ScreenShots/05-Mano-darbai1.png Graphic file (type bmp)
+<img/ScreenShots/05-Mano-darbai1.png>
+ [30]
+File: img/UC-matrix.png Graphic file (type bmp)
+<img/UC-matrix.png>
+ [31] [32]
+
+LaTeX Warning: Empty bibliography on input line 600.
+
+[33
+
+]
+Underfull \hbox (badness 2744) in paragraph at lines 621--621
+[]|\TU/texgyretermes(0)/m/n/10 Aplikacija kuriama C# programavimo
+ []
+
+[34
+
+]
+Overfull \hbox (4.23141pt too wide) in paragraph at lines 637--650
+ [][] 
+ []
+
+[35
 
 ] (Aprasas.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'Aprasas.run.xml'.
 \openout1 = `Aprasas.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23941 strings out of 427832
- 461150 string characters out of 3152396
- 962009 words of memory out of 3000000
- 27635 multiletter control sequences out of 15000+200000
+ 24036 strings out of 427832
+ 464389 string characters out of 3152396
+ 964009 words of memory out of 3000000
+ 27709 multiletter control sequences out of 15000+200000
  544775 words of font info for 96 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  67i,12n,96p,10541b,787s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Aprasas.pdf (23 pages).
+Output written on Aprasas.pdf (36 pages).
