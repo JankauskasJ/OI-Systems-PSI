@@ -429,6 +429,13 @@
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC1}
+	\caption{UC1 „Registruotis sistemoje“ Robustiškumo diagrama}
+	\label{img:uc1rob}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/01-Pradinis-langas}
 	\caption{Pradinis langas}
 	\label{img:login}
@@ -436,6 +443,13 @@
 \subsubsection{UC2 „Prisijungti prie sistemos“}
 \textbf{Pagrindinis scenarijus}. Pradiniame lange naudotojas suveda prisijungimo duomenis: el. pašto adresą bei slaptažodį. Suvedęs duomenis naudotojas spaudžia „Prisijungti“, tada sistema patikrina, ar įvesti duomenys teisingi. Jei duomenys suvesti teisingai, atsidaro pagrindinis langas.
 \par \textbf{Alternatyvus scenarijus}: naudotojas pradiniame lange neteisingai įveda prisijungimo duomenis, tada sistema praneša naudotojui, kad įvesti neteisingi duomenys bei atvaizduoja pradinį langą, kad naudotojas galėtų bandyti prisijungti dar kartą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC2}
+	\caption{UC2 „Prisijungti prie sistemos“ Robustiškumo diagrama}
+	\label{img:uc2rob}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -456,6 +470,13 @@
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC3}
+	\caption{UC3 „Atnaujinti savo duomenis“ Robustiškumo diagrama}
+	\label{img:uc3rob}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/03-Slaptažodžio-priminimo-langas}
 	\caption{Slaptažodžio priminimo langas}
 	\label{img:forget pass}
@@ -463,8 +484,23 @@
 \subsubsection{UC4 „Prašyti priminti slaptažodį“}
 \textbf{Pagrindinis scenarijus}. Naudotojas pradiniame lange spaudžia „Pamiršote slaptažodį?“, tada sistema atvaizduoja slaptažodžio priminimo langą, kuriame naudotojas suveda norimos paskyros el. pašto adresą ir spaudžia „Patvirtinti“, tada sistema patikrina el. pašto adresą ir, jei toks naudotojas(su tokiu el. pašto adresu) egzistuoja duomenų bazėje, išsiunčia šiuo el. pašto adresu priminimo laišką su naudotojo slaptažodžiu. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas su tokiu el. pašto adresu neegzistuoja, tada sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra, ir atvaizduoja slaptažodžio priminimo langą, kad naudotojas dar kartą galėtų suvesti el. paštą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC4}
+	\caption{UC4 „Prašyti priminti slaptažodį“ Robustiškumo diagrama}
+	\label{img:uc4rob}
+\end{figure}
+
 \subsubsection{UC5 „Atsijungti nuo sistemos“}
 \textbf{Pagrindinis scenarijus}. Naudotojas lange „Mano paskyra“ spaudžia „Atsijungti“, tada sistema pakeičia naudotojo būseną į „neprisijungęs“ ir atvaizduoja „Pradinį langą“.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC5}
+	\caption{UC5 „Atsijungti nuo sistemos“ Robustiškumo diagrama}
+	\label{img:uc5rob}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -475,6 +511,13 @@
 \subsubsection{UC6 „Pateikti pagalbos prašymo užklausą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas pagrindiniame lange arba šoniniame meniu spaudžia „Prašyti pagalbos“, tada sistema atvaizduoja pagalbos prašymo langą. Naudotojas užpildo prašymą, suvesdamas reikiamus duomenis ir spaudžia „Pateikti“, tada sistema patikrina, ar suvesti duomenys tinkami, ir, jei taip, sukuria naują darbą duomenų bazėje pagal pateiktą prašymą ir praneša naudotojui, kad darbas sukurtas. Tada sistema atvaizduoja pagrindinį langą.
 \par \textbf{Alternatyvus scenarijus}: naudotojas suvedė netinkamus duomenis. Tada sistema praneša naudotojui, kad suvesti netinkami duomenys, ir atvaizduoja pagalbos prašymo langą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC6}
+	\caption{UC6 „Pateikti pagalbos prašymo užklausą“ Robustiškumo diagrama}
+	\label{img:uc6rob}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -499,9 +542,24 @@
 \subsubsection{UC7 „Atlikti esamų darbų paiešką“}
 \textbf{Pagrindinis scenarijus}. Pagrindiniame lange naudotojas spaudžia „Ieškoti darbo“, tada sistema atvaizduoja darbo paieškos langą, tada naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema suranda visus darbus, atitinkančius tokius paieškos duomenis, ir atvaizduoja šių darbų sąrašą darbų sąrašo lange. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema duomenų bazėje neranda paieškos duomenis atitinkančių darbų ir praneša naudotojui, kad nėra darbų, atitinkančių pateiktus paieškos duomenis, ir atvaizduoja darbų sąrašo langą su visais esamais darbais.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC7}
+	\caption{UC7 „Atlikti esamų darbų paiešką“ Robustiškumo diagrama}
+	\label{img:uc7rob}
+\end{figure}
+
 \subsubsection{UC8 „Peržiūrėti esamų darbų sąrašą“}
 \textbf{Pagrindinis scenarijus}. Prisijungęs naudotojas meniu lange spaudžia „Darbų sąrašas“, tada sistema įkelia darbus iš DB, jei rasta daugiau nei 0 darbų, sistema atvaizduoja darbų sąrašo langą, kuriame vaizduojami visi esami darbai.
 \par \textbf{Alternatyvus scenarijus}: sistema DB neranda darbų. Tada sistema praneša vartotojui, kad nepavyko rasti darbų ir atvaizduoja tuščią darbų sąrašo langą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC8}
+	\caption{UC8 „Peržiūrėti esamų darbų sąrašą“ Robustiškumo diagrama}
+	\label{img:uc8rob}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -514,6 +572,13 @@
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC9}
+	\caption{UC9 „Pasirinkti atlikti darbą“ Robustiškumo diagrama}
+	\label{img:uc9rob}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/2}
 	\caption{Darbo atlikimo užklausos langas}
 	\label{img:selected job 2}
@@ -521,13 +586,44 @@
 \subsubsection{UC10 „Patvirtinti atliekamą darbą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema siunčia pranešimą darbą pasirinkusiajam naudotojui, pakeičia darbo būseną duomenų bazėje, paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju ir atvaizduoja darbo peržiūros langą. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Atmesti“, tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC10}
+	\caption{UC10 „Patvirtinti atliekamą darbą“ Robustiškumo diagrama}
+	\label{img:uc10rob}
+\end{figure}
+
 \subsubsection{UC11 „Atšaukti pasirinktą darbą“}
 Naudotojas „Darbo peržiūros lange“ spaudžia „Atšaukti“, tada sistema pakeičia darbo būseną duomenų bazėje bei praneša darbą pateikusiajam, kad darbo atlikimas buvo atšauktas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC11}
+	\caption{UC11 „Atšaukti pasirinktą darbą“ Robustiškumo diagrama}
+	\label{img:uc11rob}
+\end{figure}
+
 \subsubsection{UC12 „Įvertinti kitą naudotoją“}
 Naudotojas „Atlikto darbo lange“ pasirenka atlikto darbo įvertinimą iš galimų variantų ir spaudžia „Įvertinti“, tada sistema pasirinktą įvertinimą įveda į duomenų bazę.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC12}
+	\caption{UC12 „Įvertinti kitą naudotoją“ Robustiškumo diagrama}
+	\label{img:uc12rob}
+\end{figure}
+
 \subsubsection{UC13 „Peržiūrėti kito naudotojo paskyrą“}
 1. „Darbo peržiūros lange“ naudotojas spaudžia ant darbą pateikusiojo naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
 2. „Naudotojų reitingo lange“ naudotojas spaudžia ant pasirinkto naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC13}
+	\caption{UC13 „Peržiūrėti kito naudotojo paskyrą“ Robustiškumo diagrama}
+	\label{img:uc13rob}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -540,12 +636,26 @@ Naudotojas šoniniame meniu spaudžia „Mano darbai“, tada sistema atvaizduoj
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC14}
+	\caption{UC14 „Peržiūrėti atliktų darbų istoriją“ Robustiškumo diagrama}
+	\label{img:uc14rob}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/Mano_profilis/05-Atsiskaitymų-istorija}
 	\caption{Atsiskaitymų istorijos langas}
 	\label{img:payment history}
 \end{figure}
 \subsubsection{UC15 „Peržiūrėti atsiskaitymų istorija“}
 Naudotojas lange „Mano profilis“ spaudžia „Atsiskaitymų istorija“, tada sistema atvaizduoja langą „Atsiskaitymų istorija“, kuriame pateikiami visi atsiskaitymai už atliktus darbus.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC15}
+	\caption{UC15 „Peržiūrėti atsiskaitymų istorija“ Robustiškumo diagrama}
+	\label{img:uc15rob}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -559,12 +669,26 @@ Naudotojas lange „Mano profilis“ spaudžia „Atsiskaitymų istorija“, tad
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC16}
+	\caption{UC16 „Peržiūrėti savo reitingą“ Robustiškumo diagrama}
+	\label{img:uc16rob}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/10-Naudotojų-reitingas}
 	\caption{Visų naudotojų reitingų lentelė}
 	\label{img:rating table}
 \end{figure}
 \subsubsection{UC17 „Peržiūrėti naudotojų reitingų lentelę“}
 Naudotojas šoniniame meniu spaudžia „Naudotojų reitingas“, tada sistema atvaizduoja „Naudotojų reitingo“ langą, kuriame pateikiamas visų naudotojų sąrašas surikiuotas pagal reitingą.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC17}
+	\caption{UC17 „Peržiūrėti naudotojų reitingų lentelę“ Robustiškumo diagrama}
+	\label{img:uc17rob}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -577,17 +701,40 @@ Naudotojas šoniniame meniu arba „Pagrindiniame lange“ spaudžia „Mano dar
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC18}
+	\caption{UC18 „Peržiūrėti pasirinktų darbų sąrašą“ Robustiškumo diagrama}
+	\label{img:uc18rob}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/05-Mano-darbai1}
 	\caption{Pasirinktų darbų lentelė}
 	\label{img:requested jobs table}
 \end{figure}
 \subsubsection{UC19 „Peržiūrėti pateiktų darbų sąrašą“}
 Naudotojas šoniniame meniu arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC19}
+	\caption{UC19 „Peržiūrėti pateiktų darbų sąrašą“ Robustiškumo diagrama}
+	\label{img:uc19rob}
+\end{figure}
+
 \subsubsection{UC20 „Ištrinti pateiktą darbą“}
 Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“, tada sistema perklausia naudotojo, ar tikrai jis nori ištrinti pateiktą darbą, tada naudotojas spaudžia „Taip“, tada sistema patikrina, ar darbo nėra pasirinkęs, ar nėra pradėjęs vykdyti kitą naudotojas. Jei nėra, tai sistema ištrina darbą iš duomenų bazės ir praneša naudotojui, kad darbą pašalintas sėkmingai.
 \textbf{Alternatyvūs scenarijai}: \\
 1. Naudotojo norimą ištrinti darbą yra pasirinkęs atlikti kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad pirmiausiai reikia atšaukti darbo atlikimo užklausą, o tada galima ištrinti darbą. Tada sistema atvaizduoja „Darbo peržiūros langą“.\\ 
 2. Naudotojo norimą ištrinti darbą jau atlieka kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad darbo ištrinti negalima, nes jis jau yra atliekamas, ir atvaizduoja „Darbo peržiūros langą“.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/Robustness/UC20}
+	\caption{UC20 „Ištrinti pateiktą darbą“ Robustiškumo diagrama}
+	\label{img:uc20rob}
+\end{figure}
+
 \subsection{Reikalavimų - Užduočių atsekamumo matrica}
 Šiame poskyryje pateikiama užduočių atsekamumo matrica, kurioje užduotys siejamos su funkciniais reikalavimais.
 \begin{figure}[H]
