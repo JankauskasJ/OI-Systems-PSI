@@ -423,7 +423,9 @@
 	\label{img:reg}
 \end{figure}
 \subsubsection{UC1 „Registruotis sistemoje“}
-Naudotojas „Pradiniame lange“ spaudžia „Registracija“, atsiveria „Registracijos langas“. Jame naudotojas į atskirus laukelius suveda privalomus duomenis: el. pašto adresą, slaptažodį, vardą, pavardę, gyvenamosios vietos adresą bei telefono numerį. Viską suvedęs, naudotojas spaudžia „Registruotis“ ir sistema atveria „Pagrindinį langą“. Užsiregistravęs naudotojas „Pagrindiniame lange“ automatiškai laikomas prisijungusiu.
+\textbf{Pagrindinis scenarijus}. Naudotojas prisijungimo lange spaudžia „Registruotis“, atsiveria registracijos langas. Jame naudotojas į atskirus laukelius suveda registracijos duomenis: el. pašto adresą, slaptažodį, vardą, pavardę, gyvenamosios vietos adresą, telefono numerį bei pakartotinai įveda saptažodį. Viską suvedęs, naudotojas spaudžia „Registruotis“. Tada sistema patikrina, ar suvesti slaptažodžiai sutampa. Jei sutampa, sistema patikrina, ar duomenų bazėje neegzistuoja naudotojas su tokiais duomenimis. Jei ne, sistema siunčia registracijos duomenis į sistemos duomenų bazę ir atveria pagrindinį langą.
+\par \textbf{Alternatyvus scenarijus}: naudotojo įvesti slaptažodžiai nesutampa. Tada sistema parodo naudotojui pranešimą, kad įvesti slaptažodžiai nesutampa ir atvaizduoja registracijos langą.
+\par \textbf{Alternatyvus scenarijus}: toks naudotojas jau egzistuoja. Tada sistema parodo naudotojui pranešimą, kad toks naudotojas jau egzistuoja ir atvaizduoja pradinį langą.
 
 \begin{figure}[H]
 	\centering
@@ -432,8 +434,8 @@ Naudotojas „Pradiniame lange“ spaudžia „Registracija“, atsiveria „Reg
 	\label{img:login}
 \end{figure}
 \subsubsection{UC2 „Prisijungti prie sistemos“}
-Įsijungęs programėlę neprisijungęs naudotojas iš karto mato „Pradinį langą“, kuriame suveda prisijungimo duomenis: el. pašto adresą bei slaptažodį. Suvedęs duomenis naudotojas spaudžia „Prisijungti“, tada sistema patikrina, ar įvesti duomenys teisingi. Jei duomenys suvesti teisingai, atsidaro „Pagrindinis langas“, o naudotojas nuo to momento, kai prisijungė, iki to momento, kai atsijungs, laikomas prisijungusiu. 
-\par \textbf{Alternatyvus scenarijus}: naudotojas „Pradiniame lange“ neteisingai įveda prisijungimo duomenis, tada sistema praneša naudotojui, kad duomenys buvo įvesti neteisingai, bei vėl atvaizduoja „Pradinį langą“, kad naudotojas galėtų bandyti prisijungti dar kartą.
+\textbf{Pagrindinis scenarijus}. Pradiniame lange naudotojas suveda prisijungimo duomenis: el. pašto adresą bei slaptažodį. Suvedęs duomenis naudotojas spaudžia „Prisijungti“, tada sistema patikrina, ar įvesti duomenys teisingi. Jei duomenys suvesti teisingai, atsidaro pagrindinis langas.
+\par \textbf{Alternatyvus scenarijus}: naudotojas pradiniame lange neteisingai įveda prisijungimo duomenis, tada sistema praneša naudotojui, kad įvesti neteisingi duomenys bei atvaizduoja pradinį langą, kad naudotojas galėtų bandyti prisijungti dar kartą.
 
 \begin{figure}[H]
 	\centering
@@ -449,20 +451,20 @@ Naudotojas „Pradiniame lange“ spaudžia „Registracija“, atsiveria „Reg
 	\label{img:update profile}
 \end{figure}
 \subsubsection{UC3 „Atnaujinti savo duomenis“}
-Naudotojas lange „Mano profilis“ spaudžia „Atnaujinti duomenis“, tada atveriamas langas „Atnaujnti duomenis“, kuriame vaizduojami esami paskyros duomenys. Esamus paskyros duomenis naudotojas redaguoja ir baigęs redaguoti spaudžia „Išsaugoti pakeitimus“. Tada sistema atnaujina duomenis duomenų bazėje, praneša naudotojui, kad duomenys atnaujinti sėkmingai, ir atvaizduoja langą „Mano profilis“ su atnaujintais duomenimis. 
-\par\textbf{Alternatyvus scenarijus}: naudotojas lange „Atnaujinti duomenis“ suveda netinkamus duomenis, tada sistema praneša naudotojui, kad įvesti duomenys yra netinkami, ir atvaizduoja langą „Atnaujinti duomenis“, kad naudotojas galėtų suvesti duomenis dar kartą.
+\textbf{Pagrindinis scenarijus}. Naudotojas lange „Mano paskyra“ spaudžia „Atnaujinti duomenis“, tada atveriamas duomenų atnaujinimo langas, kuriame vaizduojami esami paskyros duomenys. Esamus paskyros duomenis naudotojas redaguoja ir baigęs redaguoti spaudžia „Išsaugoti pakeitimus“. Tada sistema patikrina, ar įvestas validus el. pašto adresas. Jei taip, sistema atnaujina duomenis duomenų bazėje ir praneša naudotojui, kad duomenys atnaujinti sėkmingai. Tada sistema atvaizduoja langą „Mano paskyra“ su atnaujintais duomenimis. 
+\par\textbf{Alternatyvus scenarijus}: naudotojas duomenų atnaujinimo lange suveda netinkamą el. pašto adresą, tada sistema praneša naudotojui, kad įvestas el. paštas yra netinkamas, ir atvaizduoja duomenų atnaujinimo langą.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/03-Slaptažodžio-priminimo-langas}
-	\caption{Slaptažidžio priminimo langas}
+	\caption{Slaptažodžio priminimo langas}
 	\label{img:forget pass}
 \end{figure}
 \subsubsection{UC4 „Prašyti priminti slaptažodį“}
-Naudotojas „Pradiniame lange“ spaudžia „Pamiršote slaptažodį?“, tada sistema atvaizduoja „Slaptažodžio priminimo langą“, kuriame naudotojas suveda norimos paskyros el. pašto adresą ir spaudžia „Patvirtinti“, tada sistema patikrina el. pašto adresą ir, jei toks naudotojas(su tokiu el. pašto adresu) egzistuoja duomenų bazėje, išsiunčia šiuo el. pašto adresu laišką su naudotojo slaptažodžiu. 
-\par \textbf{Alternatyvus scenarijus}: naudotojas „Slaptažodžio priminimo lange“ įveda netinkamą el. pašto adresą, tada sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra, ir atvaizduoja „Slaptažodžio priminimo langą“, kad naudotojas dar kartą galėtų suvesti el. paštą.
+\textbf{Pagrindinis scenarijus}. Naudotojas pradiniame lange spaudžia „Pamiršote slaptažodį?“, tada sistema atvaizduoja slaptažodžio priminimo langą, kuriame naudotojas suveda norimos paskyros el. pašto adresą ir spaudžia „Patvirtinti“, tada sistema patikrina el. pašto adresą ir, jei toks naudotojas(su tokiu el. pašto adresu) egzistuoja duomenų bazėje, išsiunčia šiuo el. pašto adresu priminimo laišką su naudotojo slaptažodžiu. 
+\par \textbf{Alternatyvus scenarijus}: naudotojas su tokiu el. pašto adresu neegzistuoja, tada sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra, ir atvaizduoja slaptažodžio priminimo langą, kad naudotojas dar kartą galėtų suvesti el. paštą.
 \subsubsection{UC5 „Atsijungti nuo sistemos“}
-Naudotojas lange „Mano profilis“ spaudžia „Atsijungti“, tada sistema pakeičia naudotojo būseną į „neprisijungęs“ ir atvaizduoja „Pradinį langą“.
+\textbf{Pagrindinis scenarijus}. Naudotojas lange „Mano paskyra“ spaudžia „Atsijungti“, tada sistema pakeičia naudotojo būseną į „neprisijungęs“ ir atvaizduoja „Pradinį langą“.
 
 \begin{figure}[H]
 	\centering
@@ -471,7 +473,8 @@ Naudotojas lange „Mano profilis“ spaudžia „Atsijungti“, tada sistema pa
 	\label{img:help}
 \end{figure}
 \subsubsection{UC6 „Pateikti pagalbos prašymo užklausą“}
-Naudotojas „Pagrindiniame lange“ arba šoniniame meniu spaudžia „Prašyti pagalbos“, tada sistema atvaizduoja langą „Prašyti pagalbos“. Naudotojas užpildo prašymą, suvesdamas reikiamus duomenis ir spaudžia „Pateikti“, tada sistema sukuria naują darbą duomenų bazėje pagal pateiktą prašymą ir praneša naudotojui, kad darbas sukurtas.
+\textbf{Pagrindinis scenarijus}. Naudotojas pagrindiniame lange arba šoniniame meniu spaudžia „Prašyti pagalbos“, tada sistema atvaizduoja pagalbos prašymo langą. Naudotojas užpildo prašymą, suvesdamas reikiamus duomenis ir spaudžia „Pateikti“, tada sistema patikrina, ar suvesti duomenys tinkami, ir, jei taip, sukuria naują darbą duomenų bazėje pagal pateiktą prašymą ir praneša naudotojui, kad darbas sukurtas. Tada sistema atvaizduoja pagrindinį langą.
+\par \textbf{Alternatyvus scenarijus}: naudotojas suvedė netinkamus duomenis. Tada sistema praneša naudotojui, kad suvesti netinkami duomenys, ir atvaizduoja pagalbos prašymo langą.
 
 \begin{figure}[H]
 	\centering
@@ -490,33 +493,33 @@ Naudotojas „Pagrindiniame lange“ arba šoniniame meniu spaudžia „Prašyti
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/09-Darbų-sąrašas}
-	\caption{Darbo paieškos langas}
+	\caption{Darbų sąrašo langas}
 	\label{img:work list}
 \end{figure}
 \subsubsection{UC7 „Atlikti esamų darbų paiešką“}
-„Pagrindiniame lange“ naudotojas spaudžia „Ieškoti darbo“, tada sistema atvaizduoja langą „Darbo paieška“, tada naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema suranda visus darbus, atitinkančius tokius paieškos duomenis, ir atvaizduoja šių darbų sąrašą lange „Darbų sąrašas“. 
-\par \textbf{Alternatyvus scenarijus}: naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema duomenų bazėje neranda paieškos duomenis atitinkančių darbų ir praneša naudotojui, kad nėra darbų, atitinkančių pateiktus paieškos duomenis, ir atvaizduoja langą „Darbų sąrašas“ su visais esamais darbais.
+\textbf{Pagrindinis scenarijus}. Pagrindiniame lange naudotojas spaudžia „Ieškoti darbo“, tada sistema atvaizduoja darbo paieškos langą, tada naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema suranda visus darbus, atitinkančius tokius paieškos duomenis, ir atvaizduoja šių darbų sąrašą darbų sąrašo lange. 
+\par \textbf{Alternatyvus scenarijus}: naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema duomenų bazėje neranda paieškos duomenis atitinkančių darbų ir praneša naudotojui, kad nėra darbų, atitinkančių pateiktus paieškos duomenis, ir atvaizduoja darbų sąrašo langą su visais esamais darbais.
 \subsubsection{UC8 „Peržiūrėti esamų darbų sąrašą“}
-Prisijungęs naudotojas šoniniame meniu spaudžia „Darbų sąrašas“, tada sistema atvaizduoja langą „Darbų sąrašas“, kuriame vaizduojami visi esami darbai.
+\textbf{Pagrindinis scenarijus}. Prisijungęs naudotojas meniu lange spaudžia „Darbų sąrašas“, tada sistema įkelia darbus iš DB, jei rasta daugiau nei 0 darbų, sistema atvaizduoja darbų sąrašo langą, kuriame vaizduojami visi esami darbai.
+\par \textbf{Alternatyvus scenarijus}: sistema DB neranda darbų. Tada sistema praneša vartotojui, kad nepavyko rasti darbų ir atvaizduoja tuščią darbų sąrašo langą.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/6}
-	\caption{Pasirinktas darbas}
+	\caption{Darbo peržiūros langas}
 	\label{img:selected job 1}
 \end{figure}
 \subsubsection{UC9 „Pasirinkti atlikti darbą“}
-„Darbo peržiūros lange“ naudotojas spaudžia „Atlikti darbą“, tada sistema siunčia darbo atlikimo užklausą darbą pateikusiajam naudotojui, o darbą pasirinkusiam naudotojui sistema praneša, kad laukiama darbą pateikusiojo patvirtinimo. Darbą pateikęs naudotojas darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema pakeičia darbo būseną duomenų bazėje ir paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju. Sistema mygtuką „Atlikti darbą“ keičia į mygtuką „Atšaukti“. Sistema pasirinktą darbą įtraukia į naudotojo pasirinktų darbų sąrašą. 
-\par \textbf{Alternatyvus scenarijus}: darbą pateikęs naudotojas darbo atlikimo užklausos lange spaudžia „Atmesti“, tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
+\textbf{Pagrindinis scenarijus}. Darbo peržiūros lange naudotojas spaudžia „Atlikti darbą“, tada sistema siunčia darbo atlikimo užklausą darbą pateikusiajam naudotojui, o darbą pasirinkusiam naudotojui sistema praneša, kad laukiama darbą pateikusiojo patvirtinimo ir atvaizduoja darbo peržiūros langą, kuriame mygtukas „Atlikti darbą“ pakeistas į „Atšaukti“.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{img/ScreenShots/2}
-	\caption{Pasirinktas darbas}
+	\caption{Darbo atlikimo užklausos langas}
 	\label{img:selected job 2}
 \end{figure}
 \subsubsection{UC10 „Patvirtinti atliekamą darbą“}
-Naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema siunčia pranešimą darbą pasirinkusiajam naudotojui, pakeičia darbo būseną duomenų bazėje ir paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju. 
+\textbf{Pagrindinis scenarijus}. Naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema siunčia pranešimą darbą pasirinkusiajam naudotojui, pakeičia darbo būseną duomenų bazėje, paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju ir atvaizduoja darbo peržiūros langą. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Atmesti“, tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
 \subsubsection{UC11 „Atšaukti pasirinktą darbą“}
 Naudotojas „Darbo peržiūros lange“ spaudžia „Atšaukti“, tada sistema pakeičia darbo būseną duomenų bazėje bei praneša darbą pateikusiajam, kad darbo atlikimas buvo atšauktas.
