@@ -597,6 +597,21 @@ Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“, tada sistema
     \label{img:uc-matrix}
 \end{figure}
 
+\section{Techninė sistemos architektūra}
+Šiame skyriuje pateikiami sistemą sudarantys komponentai, jų ryšiai bei išdėstymas vykdymo aplinkose.
+
+\subsection{Komponentų diagrama}
+Šiame poskyryje pateikiama sistemos komponentų ir jų tarpusavio ryšių diagrama.
+
+\subsection{Išsidėstymo diagrama}
+Šiame poskyryje pateikiama sistemos komponentų išsidėstymo vykdymo aplinkose diagrama.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{img/Deployment}
+	\caption{Išsidėstymo diagrama}
+	\label{img:deployment}
+\end{figure}
+
 \sectionnonum{Išvados}
 Remiantis ICONIX procesu, buvo peržiūrėti ir šiame dokumente surašyti visi reikalavimai mobiliajai programėlei „Help4Help". Taip pat sukurtas ir pateiktas dalykinės srities modelis bei naudotojo užduočių diagrama, aprašyti užduočių vykdymo scenarijai bei sukurtos atsekamumo matricos.
 
@@ -620,7 +635,7 @@ Remiantis ICONIX procesu, buvo peržiūrėti ir šiame dokumente surašyti visi 
 	{\begin{tabular}{|c|m{5.75cm}|m{5.75cm}|} \hline
 		Kodas & Klaida & Sprendimas \\
 		\hline
-		\textbf{K1} & Sistemos realizavimas pririštas prie specifinio OS & Pakeisti reikalavimą \\
+		\textbf{K1} & Sistemos realizavimas pririštas prie specifinio OS & Sistemą galima realizuoti naudojantis bet kokių OS \\
 		\textbf{K2} & Aplikacija kuriama C\# programavimo kalba naudojant Visual Studio & Kalbą pakeisti į Java, o IDE į Android Studio \\
 		\textbf{K3} & Aplikacija turi pranešti apie atnaujinimus 12 valandų prieš jų išėjimą & Aplikacija vartotojui praneš tik išėjus atnaujinimams \\
 		\textbf{K4} & Registracijai reikalingas asmens kodas ir gyvenamosios vietos adresas & Nereikalauti asmens kodo ir gyvenamosios vietos adreso registracijos metu \\
