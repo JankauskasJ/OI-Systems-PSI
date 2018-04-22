@@ -361,7 +361,7 @@
 
 \begin{table}[H]\footnotesize
 	\centering
-	\caption{Struktūrinio dalykinės srities modelio elementai}
+	\caption{Struktūrinio dalykinės srities modelio elementai - Esybės}
 	{\rowcolors{2}{yellow!50}{yellow!40}
 	\setlength{\arrayrulewidth}{0.25mm}
 	{\begin{tabular}{|c|m{5.75cm}|m{5.75cm}|} \hline
@@ -379,6 +379,20 @@
 		\textbf{E10} & Naudotojų sąrašas & Sąrašas visų naudotojų paskyrų, pasiekiamas žiūrint naudotojų reitingus \\
 		\textbf{E11} & Atliktų darbų istorija & Visų naudotojo atliktų darbų sąrašas \\
 		\hline
+	\end{tabular}}
+	
+	}
+	\label{tab:entity table}
+\end{table}
+
+\begin{table}[H]\footnotesize
+	\centering
+	\caption{Struktūrinio dalykinės srities modelio elementai - Grafinės sąsajos elementai}
+	{\rowcolors{2}{yellow!50}{yellow!40}
+	\setlength{\arrayrulewidth}{0.25mm}
+	{\begin{tabular}{|c|m{5.75cm}|m{5.75cm}|} \hline
+		Kodas & Elementas & Aprašymas \\
+		\hline
 		\textbf{G1} & Pagrindinis langas & Langas matomas naudotojui prisijungus prie savo paskyros \\
 		\textbf{G2} & Prisijungimo langas & Langas matomas naudotojui įsijungus aplikaciją, naudojamas identifikuoti naudotoją \\
 		\textbf{G3} & Paskyros atnaujinimo langas & Langas naudojamas naudotojo paskyros duomenų atnaujinimui \\
@@ -386,10 +400,21 @@
 		\textbf{G5} & Pagalbos prašymo užpildymo langas & Langas skirtas naudotojo pagalbos prašymui \\
 		\textbf{G6} & Mano Paskyra & Langas kuriame naudotojas mato savo paskyros duomenis \\
 		\textbf{G7} & Visų naudotojų reitingas & Langas kuriame matomas visų naudotojų reitingų sąrašas \\
-		\textbf{G8} & Darbų peržiūros langas & Langas kuriame matomas darbų sąrašas \\
-		\textbf{G9} & Kito naudotojo paskyros langas & Langas kuriame naudotojas mato kito naudotojo paskyros informaciją \\
+		\textbf{G8} & Darbo peržiūros langas & Langas kuriame matoma detali darbo informacija \\
+		\textbf{G9} & Naudotojo paskyros langas & Langas kuriame naudotojas mato kito naudotojo paskyros informaciją \\
+		\textbf{G10} & Registracijos langas & Langas kuriame įvedama naujos paskyros informacija \\
+		\textbf{G11} & Menių langas & Langas leidžiantis patekti į kitus, langus \\
+		\textbf{G12} & Darbo paieškos langas & Langas naudojamas atrasti darbą pagal naudotojo pasirinktus kriterijus \\
+		\textbf{G13} & Darbų sąrašo langas & Langas kuriame matomas darbų sąraįas \\
+		\textbf{G14} & Darbo atlikimo užklausos langas & Langas matomas paspaudus ant naudotojo pagalbos prašymo jį pateikusiam naudotojui \\
+		\textbf{G15} & Atlikto darbo langas  & Langas matomas naudotojui paspaudus ant atliekamo darbo \\
+		\textbf{G16} & Darbu istorija & Langas su visų naudotojų atliktų darbų sąrašu \\
+		\textbf{G17} & Atsiskaitymų istorija & Langas su naudotojo valiutos balansu ir atsiskaitymų sąrašu \\
+		\textbf{G18} & Reitingo langas & Langas su naudotojo reitingu ir įvertinimų sąrašu \\
+		\textbf{G19} & Mano darbai & Langas su naudotojų pateiktais pagalbos prašymais ir atliekamais darbais \\
 		\hline
 	\end{tabular}}
+	
 	}
 	\label{tab:entity table}
 \end{table}
@@ -746,7 +771,7 @@
 Šiame skyriuje pateikiami sistemą sudarantys komponentai, jų ryšiai bei išdėstymas vykdymo aplinkose.
 
 \subsection{Komponentų diagrama}
-Šiame poskyryje pateikiama sistemos komponentų ir jų tarpusavio ryšių diagrama (43 pav.).
+Šiame poskyryje pateikiama sistemos komponentų ir jų tarpusavio ryšių diagrama (\ref {img:components} pav.).
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.7]{img/Components}
@@ -755,7 +780,7 @@
 \end{figure}
 
 \subsection{Išsidėstymo diagrama}
-Šiame poskyryje pateikiama sistemos komponentų išsidėstymo vykdymo aplinkose diagrama (44 pav.).
+Šiame poskyryje pateikiama sistemos komponentų išsidėstymo vykdymo aplinkose diagrama (\ref{img:deployment} pav.).
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.7]{img/Deployment}
