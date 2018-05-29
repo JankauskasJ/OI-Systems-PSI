@@ -796,6 +796,9 @@
 \subsubsection{UC16 „Peržiūrėti savo reitingą“}
 \textbf{Pagrindinis scenarijus}. 1. Naudotojas lange „Mano paskyra“ mato savo reitingą. \\
 2. Naudotojas lange „Mano paskyra“ spaudžia „Reitingas“, tada sistema atvaizduoja langą „Reitingas“, kuriame pateikti visi gauti įvertinimai bei įvertinimų vidurkis(reitingas).
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: \\
+\textbf{Išestis}: \\ \\
 
 \begin{figure}[H]
 	\centering
@@ -819,6 +822,9 @@
 \end{figure}
 \subsubsection{UC17 „Peržiūrėti naudotojų reitingų lentelę“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange spaudžia „Naudotojų reitingas“, tada sistema atvaizduoja „Naudotojų reitingo“ langą, kuriame pateikiamas visų naudotojų sąrašas surikiuotas pagal reitingą.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: Naudotojas meniu lange spaudžia „Naudotojų reitingas“\\
+\textbf{Išestis}: „Naudotojų reitingo“ lange rodomas visų naudotojų sąrašas surikiuotas pagal reitingą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -842,6 +848,9 @@
 \end{figure}
 \subsubsection{UC18 „Peržiūrėti pasirinktų darbų sąrašą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, tada naudotojas spaudžia „Atliekami darbai“, tada sistema atvaizduoja langą „Mano darbai 2“, kuriame pateikiamas naudotojo pasirinktų darbų sąrašas.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: Naudotojas lange „Mano darbai “ spaudžia „Atliekami darbai“\\
+\textbf{Išestis}: Lange „Mano darbai“ rodomi naudotojo pasirinkti atlikti darbų sąrašas\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -866,8 +875,8 @@
 \subsubsection{UC19 „Peržiūrėti pateiktų darbų sąrašą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
 \par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: \\
-\textbf{Išestis}: \\ \\
+\textbf{Įvestis}:  Naudotojas menių lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“\\
+\textbf{Išestis}: Lange „Mano darbai“ rodomas naudotojo darbų sąrašas\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -888,11 +897,11 @@
 \par \textbf{Alternatyvus scenarijus}: naudotojo norimą ištrinti darbą yra pasirinkęs atlikti kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad pirmiausiai reikia atšaukti darbo atlikimo užklausą, o tada galima ištrinti darbą. Tada sistema atvaizduoja „Darbo peržiūros langą“.
 \par \textbf{Alternatyvus scenarijus}: naudotojo norimą ištrinti darbą jau atlieka kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad darbo ištrinti negalima, nes jis jau yra atliekamas, ir atvaizduoja „Darbo peržiūros langą“.
 \par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas "Darbo peržiūros lange" spaudžia "Ištrinti" ir darbas nėra pasirinktas ar pradėtas vykdyti kito naudotojo. \\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas nėra pasirinktas ar pradėtas vykdyti kito naudotojo. \\
 \textbf{Išvestis}: Pasirinktas darbas ištrintas iš duomenų bazės. \\ \\
-\textbf{Įvestis}: Naudotojas "Darbo peržiūros lange" spaudžia "Ištrinti" ir darbas yra pasirinktas atlikti kito naudotojo. \\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas yra pasirinktas atlikti kito naudotojo. \\
 \textbf{Išvestis}: Sistema praneša vartotojui, kad pirma reikia atšaukti atlikimo užklausą. Darbas neištrintas iš duomenų bazės\\ \\
-\textbf{Įvestis}: Naudotojas "Darbo peržiūros lange" spaudžia "Ištrinti" ir darbas yra vykdomas naudotojo. \\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas yra vykdomas naudotojo. \\
 \textbf{Išvestis}: Sistema praneša vartotojui, kad darbo atšaukti negalima. Darbas neištrintas iš duomenų bazės\\ \\
 
 
