@@ -690,6 +690,10 @@
 
 \subsubsection{UC11 „Atšaukti pasirinktą darbą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas „Darbo peržiūros lange“ spaudžia „Atšaukti“, tada sistema pakeičia darbo būseną duomenų bazėje bei praneša darbą pateikusiajam, kad darbo atlikimas buvo atšauktas.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Atšaukti“\\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad jo darbo atlikimas buvo atšauktas ir pakeičia darbo atlikimo būseną į neatliekamą\\ \\
+
 
 \begin{figure}[H]
 	\centering
@@ -707,6 +711,11 @@
 
 \subsubsection{UC12 „Įvertinti kitą naudotoją“}
 \textbf{Pagrindinis scenarijus}. Naudotojas „Atlikto darbo lange“ pasirenka atlikto darbo įvertinimą iš galimų variantų ir spaudžia „Įvertinti“, tada sistema pasirinktą įvertinimą įveda į duomenų bazę.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: Naudotojas  „Atlikto darbo lange“ ir pasirinkes įvertinimą spaudžia „Įvertinti“\\
+\textbf{Išvestis}: Naudotojo įvertinimas įrašytas į duomenų bazę ir matomas naudotojo paskyroje\\ \\
+\textbf{Įvestis}:  Naudotojas  „Atlikto darbo lange“ ir nepasirinkes įvertinimo spaudžia „Įvertinti“\\
+\textbf{Išvestis}: Sistema praneša naudotojui kad reikia pasirinkti įvertinimą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -725,6 +734,9 @@
 \subsubsection{UC13 „Peržiūrėti kito naudotojo paskyrą“}
 \textbf{Pagrindinis scenarijus}. 1. „Darbo peržiūros lange“ naudotojas spaudžia ant darbą pateikusiojo naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
 2. „Naudotojų reitingo lange“ naudotojas spaudžia ant pasirinkto naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ arba „Naudotojų reitingo lange“ spaudžia ant kito naudotojo vardo\\
+\textbf{Išvestis}: Sistema rodo kito naudotojo paskyros langą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -749,6 +761,9 @@
 
 \subsubsection{UC14 „Peržiūrėti atliktų darbų istoriją“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange spaudžia „Darbų istorija“, tada sistema atvaizduoja langą „Darbų istorija“, kuriame pateikiami visi naudotojo jau atlikti darbai.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: Naudotojas meniu lange spaudžia „Darbų istorija“\\
+\textbf{Išvestis}: Sistema lange „Darbų istorija“ rodo visus naudotojo jau atliktus darbus\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -772,6 +787,9 @@
 \end{figure}
 \subsubsection{UC15 „Peržiūrėti atsiskaitymų istorija“}
 \textbf{Pagrindinis scenarijus}. Naudotojas lange „Mano paskyra“ spaudžia „Atsiskaitymų istorija“, tada sistema atvaizduoja langą „Atsiskaitymų istorija“, kuriame pateikiami visi atsiskaitymai už atliktus darbus.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: Naudotojas lange „Mano paskyra“ spaudžia „Atsiskaitymų istorija“\\
+\textbf{Išvestis}: Sistema lange „Atsiskaitymų istorija“ rodo visus naudotojo reitingus už atliktus darbus\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -797,8 +815,8 @@
 \textbf{Pagrindinis scenarijus}. 1. Naudotojas lange „Mano paskyra“ mato savo reitingą. \\
 2. Naudotojas lange „Mano paskyra“ spaudžia „Reitingas“, tada sistema atvaizduoja langą „Reitingas“, kuriame pateikti visi gauti įvertinimai bei įvertinimų vidurkis(reitingas).
 \par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: \\
-\textbf{Išestis}: \\ \\
+\textbf{Įvestis}: Naudotojas lange „Mano paskyra“ spaudžia  „Reitingas“. \\
+\textbf{Išvestis}: Sistema lange  „Reitingas“ rodo naudotojo reitingą.\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -824,7 +842,7 @@
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange spaudžia „Naudotojų reitingas“, tada sistema atvaizduoja „Naudotojų reitingo“ langą, kuriame pateikiamas visų naudotojų sąrašas surikiuotas pagal reitingą.
 \par \textbf{Testavimo scenarijai}:\\
 \textbf{Įvestis}: Naudotojas meniu lange spaudžia „Naudotojų reitingas“\\
-\textbf{Išestis}: „Naudotojų reitingo“ lange rodomas visų naudotojų sąrašas surikiuotas pagal reitingą\\ \\
+\textbf{Išvestis}: „Naudotojų reitingo“ lange rodomas visų naudotojų sąrašas surikiuotas pagal reitingą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -850,7 +868,7 @@
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, tada naudotojas spaudžia „Atliekami darbai“, tada sistema atvaizduoja langą „Mano darbai 2“, kuriame pateikiamas naudotojo pasirinktų darbų sąrašas.
 \par \textbf{Testavimo scenarijai}:\\
 \textbf{Įvestis}: Naudotojas lange „Mano darbai “ spaudžia „Atliekami darbai“\\
-\textbf{Išestis}: Lange „Mano darbai“ rodomi naudotojo pasirinkti atlikti darbų sąrašas\\ \\
+\textbf{Išvestis}: Lange „Mano darbai“ rodomi naudotojo pasirinkti atlikti darbų sąrašas\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -876,7 +894,7 @@
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
 \par \textbf{Testavimo scenarijai}:\\
 \textbf{Įvestis}:  Naudotojas menių lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“\\
-\textbf{Išestis}: Lange „Mano darbai“ rodomas naudotojo darbų sąrašas\\ \\
+\textbf{Išvestis}: Lange „Mano darbai“ rodomas naudotojo darbų sąrašas\\ \\
 
 \begin{figure}[H]
 	\centering
