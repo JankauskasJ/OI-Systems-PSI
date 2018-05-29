@@ -795,6 +795,9 @@
 \end{figure}
 \subsubsection{UC19 „Peržiūrėti pateiktų darbų sąrašą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: \\
+\textbf{Išestis}: \\ \\
 
 \begin{figure}[H]
 	\centering
@@ -812,8 +815,17 @@
 
 \subsubsection{UC20 „Ištrinti pateiktą darbą“}
 \textbf{Pagrindinis scenarijus}.Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“, tada sistema perklausia naudotojo, ar tikrai jis nori ištrinti pateiktą darbą, tada naudotojas spaudžia „Taip“, tada sistema patikrina, ar darbo nėra pasirinkęs, ar nėra pradėjęs vykdyti kitą naudotojas. Jei nėra, tai sistema ištrina darbą iš duomenų bazės ir praneša naudotojui, kad darbą pašalintas sėkmingai.
-\par \textbf{Alternatyvus scenarijus}: naudotojo norimą ištrinti darbą yra pasirinkęs atlikti kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad pirmiausiai reikia atšaukti darbo atlikimo užklausą, o tada galima ištrinti darbą. Tada sistema atvaizduoja „Darbo peržiūros langą“.\\ 
+\par \textbf{Alternatyvus scenarijus}: naudotojo norimą ištrinti darbą yra pasirinkęs atlikti kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad pirmiausiai reikia atšaukti darbo atlikimo užklausą, o tada galima ištrinti darbą. Tada sistema atvaizduoja „Darbo peržiūros langą“.
 \par \textbf{Alternatyvus scenarijus}: naudotojo norimą ištrinti darbą jau atlieka kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad darbo ištrinti negalima, nes jis jau yra atliekamas, ir atvaizduoja „Darbo peržiūros langą“.
+\par \textbf{Testavimo scenarijai}:\\
+\textbf{Įvestis}: Naudotojas "Darbo peržiūros lange" spaudžia "Ištrinti" ir darbas nėra pasirinktas ar pradėtas vykdyti kito naudotojo. \\
+\textbf{Išvestis}: Pasirinktas darbas ištrintas iš duomenų bazės. \\ \\
+\textbf{Įvestis}: Naudotojas "Darbo peržiūros lange" spaudžia "Ištrinti" ir darbas yra pasirinktas atlikti kito naudotojo. \\
+\textbf{Išvestis}: Sistema praneša vartotojui, kad pirma reikia atšaukti atlikimo užklausą. Darbas neištrintas iš duomenų bazės\\ \\
+\textbf{Įvestis}: Naudotojas "Darbo peržiūros lange" spaudžia "Ištrinti" ir darbas yra vykdomas naudotojo. \\
+\textbf{Išvestis}: Sistema praneša vartotojui, kad darbo atšaukti negalima. Darbas neištrintas iš duomenų bazės\\ \\
+
+
 
 \begin{figure}[H]
 	\centering
