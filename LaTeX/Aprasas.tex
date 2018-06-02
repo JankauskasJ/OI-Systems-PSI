@@ -69,26 +69,6 @@
 	\item \textbf{FR19} Naudotojo sąsajos funkcijas įgyvendina mobili aplikacija „Help4Help“.
 \end{itemize}
 
-\subsubsubsection{Sistemos administratoriaus sąsajos funkcijos}
-\begin{itemize}
-	\item \textbf{FR20} Prisijungti prie sistemos (privalomi duomenys: el. pašto adresas ir slaptažodis).
-	\item \textbf{FR21} Atsijungti nuo sistemos.
-	\item \textbf{FR22} Sukurti naują vartotojo paskyrą duomenų bazėje.
-	\item \textbf{FR23} Ištrinti vartotojo paskyrą iš duomenų bazės.
-	\item \textbf{FR24} Pašalinti pagalbos prašymo užklausą iš sąrašo.
-	\item \textbf{FR25} Patvirtinti naują naudotoją.
-	\item \textbf{FR26} Pativrtinti atsiskaitymą.
-	\item \textbf{FR27} Redaguoti naudotojo paskyros duomenis (pasirinktinai: el. pašto adresas, slaptažodis, vardas, pavardė, asmens kodas, gyvenamosios vietos adresas, telefono numeris).
-	\item \textbf{FR28} Atsakyti į naudotojų klausimus.
-	\item \textbf{FR29} Išsiųsti pranešimą naudotojams (privalomai: gavėjų el. pašto adresai, antrašė, pranešimo tekstas).
-	\item \textbf{FR30} Peržiūrėti registruotų naudotojų sąrašą, jų prašymų užklausų pateikimo istorijas, atsiskaitymo istorijas.
-	\item \textbf{FR31} Peržiūrėti kasdienį lankomumą.
-	\item \textbf{FR32} Peržiūrėti naudotojų lokacijas.
-	\item \textbf{FR33} Peržiūrėti naudotojų demografinės statistikos duomenis ( pvz.: pateikti pirkėjų dalį procentais pagal lytį).
-	\item \textbf{FR34} Išsaugoti atsarginę duomenų kopiją.
-	\item \textbf{FR35} Sistemos administratoriaus sąsajos funkcijas įgyvendina paties administratoriaus pasirinkti DB valdymo įrankiai.
-\end{itemize}
-
 \subsubsection{Šalutiniai funkciniai reikalavimai}
 Šiame skirsnyje pateikiami šalutiniai funkciniai reikalavimai mobiliajai aplikacijai „Help4Help“.
 \subsubsubsection{Aplikacijos navigacijos reikalavimai}
@@ -450,11 +430,6 @@
 \textbf{Pagrindinis scenarijus}. Naudotojas prisijungimo lange spaudžia „Registruotis“, atsiveria registracijos langas. Jame naudotojas į atskirus laukelius suveda registracijos duomenis: el. pašto adresą, slaptažodį, vardą, pavardę, gyvenamosios vietos adresą, telefono numerį bei pakartotinai įveda saptažodį. Viską suvedęs, naudotojas spaudžia „Registruotis“. Tada sistema patikrina, ar suvesti slaptažodžiai sutampa. Jei sutampa, sistema patikrina, ar duomenų bazėje neegzistuoja naudotojas su tokiais duomenimis. Jei ne, sistema siunčia registracijos duomenis į sistemos duomenų bazę ir atveria pagrindinį langą.
 \par \textbf{Alternatyvus scenarijus}: naudotojo įvesti slaptažodžiai nesutampa. Tada sistema parodo naudotojui pranešimą, kad įvesti slaptažodžiai nesutampa ir atvaizduoja registracijos langą.
 \par \textbf{Alternatyvus scenarijus}: toks naudotojas jau egzistuoja. Tada sistema parodo naudotojui pranešimą, kad toks naudotojas jau egzistuoja ir atvaizduoja pradinį langą.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas Registracijos lange spaudžia „Registruotis“ ir visi arba keletas laukų nėra užpildyti. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad reikia užpildyti visus laukus. \\ \\
-\textbf{Įvestis}: Naudotojas Registracijos lange spaudžia „Registruotis“ ir slaptažodžių laukai nesutampa. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad slaptažodis ir pakartotas slaptažodis nesutampa\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -472,13 +447,6 @@
 \subsubsection{UC2 „Prisijungti prie sistemos“}
 \textbf{Pagrindinis scenarijus}. Prisijungimo lange naudotojas suveda prisijungimo duomenis: el. pašto adresą bei slaptažodį. Suvedęs duomenis naudotojas spaudžia „Prisijungti“, tada sistema patikrina, ar įvesti duomenys teisingi. Jei duomenys suvesti teisingai, atsidaro pagrindinis langas.
 \par \textbf{Alternatyvus scenarijus}: naudotojas prisijungimo lange neteisingai įveda prisijungimo duomenis, tada sistema praneša naudotojui, kad įvesti neteisingi duomenys bei atvaizduoja pradinį langą, kad naudotojas galėtų bandyti prisijungti dar kartą.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas Prisijungimo lange spaudžia „Prisijungti“ neužpildęs nė vieno duomenų lauko. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad reikia įvesti el pašto adresą ir slaptažodį. \\ \\
-\textbf{Įvestis}: Naudotojas Prisijungimo lange įveda neegzistuojančio naudotojo el. paštą ir spaudžia „Prisijungti“. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad toks naudotojas neegzistuoja\\ \\
-\textbf{Įvestis}: Naudotojas Prisijungimo lange įveda neteisingą slaptažodį ir spaudžia „Prisijungti“. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad slaptažodis neteisingas\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -503,11 +471,6 @@
 \subsubsection{UC3 „Atnaujinti savo duomenis“}
 \textbf{Pagrindinis scenarijus}. Naudotojas lange „Mano paskyra“ spaudžia „Atnaujinti duomenis“, tada atveriamas duomenų atnaujinimo langas, kuriame vaizduojami esami paskyros duomenys. Esamus paskyros duomenis naudotojas redaguoja ir baigęs redaguoti spaudžia „Išsaugoti pakeitimus“. Tada sistema patikrina, ar įvestas validus el. pašto adresas. Jei taip, sistema atnaujina duomenis duomenų bazėje ir praneša naudotojui, kad duomenys atnaujinti sėkmingai. Tada sistema atvaizduoja langą „Mano paskyra“ su atnaujintais duomenimis. 
 \par\textbf{Alternatyvus scenarijus}: naudotojas duomenų atnaujinimo lange suveda netinkamą el. pašto adresą, tada sistema praneša naudotojui, kad įvestas el. paštas yra netinkamas, ir atvaizduoja duomenų atnaujinimo langą.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas duomenų atnaujinimo lange spaudžia „Atnaujinti“ palikęs vieną ar daugiau tuščių laukų. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad visi laukai turi būti užpildyti. \\ \\
-\textbf{Įvestis}: Naudotojas duomenų atnaujinimo lange spaudžia „Atnaujinti“ įvedęs jau esamą sistemoje el. pašto adresą. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad el. paštas yra netinkamas\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -525,11 +488,6 @@
 \subsubsection{UC4 „Prašyti priminti slaptažodį“}
 \textbf{Pagrindinis scenarijus}. Naudotojas prisijungimo lange spaudžia „Pamiršote slaptažodį?“, tada sistema atvaizduoja slaptažodžio priminimo langą, kuriame naudotojas suveda norimos paskyros el. pašto adresą ir spaudžia „Patvirtinti“, tada sistema patikrina el. pašto adresą ir, jei toks naudotojas(su tokiu el. pašto adresu) egzistuoja duomenų bazėje, išsiunčia šiuo el. pašto adresu priminimo laišką su naudotojo slaptažodžiu. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas su tokiu el. pašto adresu neegzistuoja, tada sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra, ir atvaizduoja slaptažodžio priminimo langą, kad naudotojas dar kartą galėtų suvesti el. paštą.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas slaptažodžio priminimo lange spaudžia „Patvirtinti“ palikęs tuščią lauką. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad nėra nurodytas el. pašto adresas. \\ \\
-\textbf{Įvestis}: Naudotojas slaptažodžio priminimo lange spaudžia „Patvirtinti“ įvedęs neegzistuojantį sistemoje el. pašto adresą. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -540,9 +498,6 @@
 
 \subsubsection{UC5 „Atsijungti nuo sistemos“}
 \textbf{Pagrindinis scenarijus}. Naudotojas lange „Mano paskyra“ spaudžia „Atsijungti“, tada sistema pakeičia naudotojo būseną į „neprisijungęs“ ir atvaizduoja „Pradinį langą“.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas lange „Mano paskyra“ spaudžia „Atsijungti“. \\
-\textbf{Išvestis}: Sistema naudotojui atvaizduoja prisijungimo langą \\ \\
 
 \begin{figure}[H]
 	\centering
@@ -560,11 +515,6 @@
 \subsubsection{UC6 „Pateikti pagalbos prašymo užklausą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas pagrindiniame lange arba meniu lange spaudžia „Prašyti pagalbos“, tada sistema atvaizduoja pagalbos prašymo langą. Naudotojas užpildo prašymą, suvesdamas reikiamus duomenis ir spaudžia „Pateikti“, tada sistema patikrina, ar suvesti duomenys tinkami, ir, jei taip, sukuria naują darbą duomenų bazėje pagal pateiktą prašymą ir praneša naudotojui, kad darbas sukurtas. Tada sistema atvaizduoja pagrindinį langą.
 \par \textbf{Alternatyvus scenarijus}: naudotojas suvedė netinkamus duomenis. Tada sistema praneša naudotojui, kad suvesti netinkami duomenys, ir atvaizduoja pagalbos prašymo langą.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas pagalbos prašymo lange spaudžia „Pateikti“ neužpildęs visų laukų. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad reikia užpildyti visus laukus. \\ \\
-\textbf{Įvestis}: Naudotojas pagalbos prašymo lange spaudžia „Pateikti“ suvedęs neteisingus duomenis. \\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad įvesti duomenys neteisingi\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -596,11 +546,6 @@
 \subsubsection{UC7 „Atlikti esamų darbų paiešką“}
 \textbf{Pagrindinis scenarijus}. Pagrindiniame lange naudotojas spaudžia „Ieškoti darbo“, tada sistema atvaizduoja darbo paieškos langą, tada naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema suranda visus darbus, atitinkančius tokius paieškos duomenis, ir atvaizduoja šių darbų sąrašą darbų sąrašo lange. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas suveda paieškos duomenis ir spaudžia „Ieškoti“, tada sistema duomenų bazėje neranda paieškos duomenis atitinkančių darbų ir praneša naudotojui, kad nėra darbų, atitinkančių pateiktus paieškos duomenis, ir atvaizduoja darbų sąrašo langą su visais esamais darbais.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas darbo paieškos lange spaudžia „Ieškoti“ neįvedęs paieškos duomenų. \\
-\textbf{Išvestis}: Sistema naudotojui pateikia visų darbų sąrašą. \\ \\
-\textbf{Įvestis}: Naudotojas darbo paieškos lange spaudžia „Ieškoti“ paieškos duomenis pagal kuriuos nėra randama darbų. \\
-\textbf{Išvestis}: Sistema naudotojui pateikia visų darbų sąrašą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -612,9 +557,6 @@
 \subsubsection{UC8 „Peržiūrėti esamų darbų sąrašą“}
 \textbf{Pagrindinis scenarijus}. Prisijungęs naudotojas meniu lange spaudžia „Darbų sąrašas“, tada sistema įkelia darbus iš DB, jei rasta daugiau nei 0 darbų, sistema atvaizduoja darbų sąrašo langą, kuriame vaizduojami visi esami darbai.
 \par \textbf{Alternatyvus scenarijus}: sistema DB neranda darbų. Tada sistema praneša vartotojui, kad nepavyko rasti darbų ir atvaizduoja tuščią darbų sąrašo langą.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas meniu lange spaudžia „Darbų sąrašas“. \\
-\textbf{Išvestis}: Sistema naudotojui atvaizduoja darbų peržiūros langą \\ \\
 
 \begin{figure}[H]
 	\centering
@@ -631,9 +573,6 @@
 \end{figure}
 \subsubsection{UC9 „Pasirinkti atlikti darbą“}
 \textbf{Pagrindinis scenarijus}. Darbo peržiūros lange naudotojas spaudžia „Atlikti darbą“, tada sistema siunčia darbo atlikimo užklausą darbą pateikusiajam naudotojui, o darbą pasirinkusiam naudotojui sistema praneša, kad laukiama darbą pateikusiojo patvirtinimo ir atvaizduoja darbo peržiūros langą, kuriame mygtukas „Atlikti darbą“ pakeistas į „Atšaukti“.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas darbo peržiūros lange spaudžia „Atlikti darbą“. \\
-\textbf{Išvestis}: Sistema naudotojui praneša, kad laukiama darbą pateikusiojo patvirtinimo \\ \\
 
 \begin{figure}[H]
 	\centering
@@ -651,11 +590,6 @@
 \subsubsection{UC10 „Patvirtinti atliekamą darbą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Patvirtinti“, tada sistema siunčia pranešimą darbą pasirinkusiajam naudotojui, pakeičia darbo būseną duomenų bazėje, paskiria darbą pasirinkusį naudotoją tą darbą atliekančiuoju ir atvaizduoja darbo peržiūros langą. 
 \par \textbf{Alternatyvus scenarijus}: naudotojas, gavęs darbo atlikimo užklausą, darbo atlikimo užklausos lange spaudžia „Atmesti“, tada sistema darbą pasirinkusiajam naudotojui parodo pranešimą, kad darbo atlikimo užklausa atmesta. Darbo būsena duomenų bazėje nekeičiama.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas darbo atlikimo užklausos lange spaudžia „Patvirtinti“. \\
-\textbf{Išvestis}: Sistema naudotojui atvaizduoja darbo peržiūros langą \\ \\
-\textbf{Įvestis}: Naudotojas darbo paieškos lange spaudžia „Atšaukti“. \\
-\textbf{Išvestis}: Sistema naudotojui parodo, kad darbo atlikimo užklausa atmesta\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -666,9 +600,6 @@
 
 \subsubsection{UC11 „Atšaukti pasirinktą darbą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas „Darbo peržiūros lange“ spaudžia „Atšaukti“, tada sistema pakeičia darbo būseną duomenų bazėje bei praneša darbą pateikusiajam, kad darbo atlikimas buvo atšauktas.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Atšaukti“\\
-\textbf{Išvestis}: Sistema praneša naudotojui, kad jo darbo atlikimas buvo atšauktas ir pakeičia darbo atlikimo būseną į neatliekamą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -679,11 +610,6 @@
 
 \subsubsection{UC12 „Įvertinti kitą naudotoją“}
 \textbf{Pagrindinis scenarijus}. Naudotojas „Atlikto darbo lange“ pasirenka atlikto darbo įvertinimą iš galimų variantų ir spaudžia „Įvertinti“, tada sistema pasirinktą įvertinimą įveda į duomenų bazę.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas  „Atlikto darbo lange“ ir pasirinkes įvertinimą spaudžia „Įvertinti“\\
-\textbf{Išvestis}: Naudotojo įvertinimas įrašytas į duomenų bazę ir matomas naudotojo paskyroje\\ \\
-\textbf{Įvestis}:  Naudotojas  „Atlikto darbo lange“ ir nepasirinkes įvertinimo spaudžia „Įvertinti“\\
-\textbf{Išvestis}: Sistema praneša naudotojui kad reikia pasirinkti įvertinimą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -695,9 +621,6 @@
 \subsubsection{UC13 „Peržiūrėti kito naudotojo paskyrą“}
 \textbf{Pagrindinis scenarijus}. 1. „Darbo peržiūros lange“ naudotojas spaudžia ant darbą pateikusiojo naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
 2. „Naudotojų reitingo lange“ naudotojas spaudžia ant pasirinkto naudotojo vardo, tada sistema atvaizduoja darbą pateikusiojo naudotojo paskyros langą.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ arba „Naudotojų reitingo lange“ spaudžia ant kito naudotojo vardo\\
-\textbf{Išvestis}: Sistema rodo kito naudotojo paskyros langą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -715,9 +638,6 @@
 
 \subsubsection{UC14 „Peržiūrėti atliktų darbų istoriją“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange spaudžia „Darbų istorija“, tada sistema atvaizduoja langą „Darbų istorija“, kuriame pateikiami visi naudotojo jau atlikti darbai.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas meniu lange spaudžia „Darbų istorija“\\
-\textbf{Išvestis}: Sistema lange „Darbų istorija“ rodo visus naudotojo jau atliktus darbus\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -734,9 +654,6 @@
 \end{figure}
 \subsubsection{UC15 „Peržiūrėti atsiskaitymų istorija“}
 \textbf{Pagrindinis scenarijus}. Naudotojas lange „Mano paskyra“ spaudžia „Atsiskaitymų istorija“, tada sistema atvaizduoja langą „Atsiskaitymų istorija“, kuriame pateikiami visi atsiskaitymai už atliktus darbus.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas lange „Mano paskyra“ spaudžia „Atsiskaitymų istorija“\\
-\textbf{Išvestis}: Sistema lange „Atsiskaitymų istorija“ rodo visus naudotojo reitingus už atliktus darbus\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -754,9 +671,6 @@
 \subsubsection{UC16 „Peržiūrėti savo reitingą“}
 \textbf{Pagrindinis scenarijus}. 1. Naudotojas lange „Mano paskyra“ mato savo reitingą. \\
 2. Naudotojas lange „Mano paskyra“ spaudžia „Reitingas“, tada sistema atvaizduoja langą „Reitingas“, kuriame pateikti visi gauti įvertinimai bei įvertinimų vidurkis(reitingas).
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas lange „Mano paskyra“ spaudžia  „Reitingas“. \\
-\textbf{Išvestis}: Sistema lange  „Reitingas“ rodo naudotojo reitingą.\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -773,9 +687,6 @@
 \end{figure}
 \subsubsection{UC17 „Peržiūrėti naudotojų reitingų lentelę“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange spaudžia „Naudotojų reitingas“, tada sistema atvaizduoja „Naudotojų reitingo“ langą, kuriame pateikiamas visų naudotojų sąrašas surikiuotas pagal reitingą.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas meniu lange spaudžia „Naudotojų reitingas“\\
-\textbf{Išvestis}: „Naudotojų reitingo“ lange rodomas visų naudotojų sąrašas surikiuotas pagal reitingą\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -792,9 +703,6 @@
 \end{figure}
 \subsubsection{UC18 „Peržiūrėti pasirinktų darbų sąrašą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, tada naudotojas spaudžia „Atliekami darbai“, tada sistema atvaizduoja langą „Mano darbai 2“, kuriame pateikiamas naudotojo pasirinktų darbų sąrašas.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas lange „Mano darbai “ spaudžia „Atliekami darbai“\\
-\textbf{Išvestis}: Lange „Mano darbai“ rodomi naudotojo pasirinkti atlikti darbų sąrašas\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -811,9 +719,6 @@
 \end{figure}
 \subsubsection{UC19 „Peržiūrėti pateiktų darbų sąrašą“}
 \textbf{Pagrindinis scenarijus}. Naudotojas meniu lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“, tada sistema atvaizduoja langą „Mano darbai 1“, kuriame pateikiamas naudotojo pateiktų darbų sąrašas.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}:  Naudotojas menių lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“\\
-\textbf{Išvestis}: Lange „Mano darbai“ rodomas naudotojo darbų sąrašas\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -826,13 +731,6 @@
 \textbf{Pagrindinis scenarijus}.Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“, tada sistema perklausia naudotojo, ar tikrai jis nori ištrinti pateiktą darbą, tada naudotojas spaudžia „Taip“, tada sistema patikrina, ar darbo nėra pasirinkęs, ar nėra pradėjęs vykdyti kitą naudotojas. Jei nėra, tai sistema ištrina darbą iš duomenų bazės ir praneša naudotojui, kad darbą pašalintas sėkmingai.
 \par \textbf{Alternatyvus scenarijus}: naudotojo norimą ištrinti darbą yra pasirinkęs atlikti kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad pirmiausiai reikia atšaukti darbo atlikimo užklausą, o tada galima ištrinti darbą. Tada sistema atvaizduoja „Darbo peržiūros langą“.
 \par \textbf{Alternatyvus scenarijus}: naudotojo norimą ištrinti darbą jau atlieka kitas naudotojas, tada sistema praneša darbą ištrinti norinčiam naudotojui, kad darbo ištrinti negalima, nes jis jau yra atliekamas, ir atvaizduoja „Darbo peržiūros langą“.
-\par \textbf{Testavimo scenarijai}:\\
-\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas nėra pasirinktas ar pradėtas vykdyti kito naudotojo. \\
-\textbf{Išvestis}: Pasirinktas darbas ištrintas iš duomenų bazės. \\ \\
-\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas yra pasirinktas atlikti kito naudotojo. \\
-\textbf{Išvestis}: Sistema praneša vartotojui, kad pirma reikia atšaukti atlikimo užklausą. Darbas neištrintas iš duomenų bazės\\ \\
-\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas yra vykdomas naudotojo. \\
-\textbf{Išvestis}: Sistema praneša vartotojui, kad darbo atšaukti negalima. Darbas neištrintas iš duomenų bazės\\ \\
 
 \begin{figure}[H]
 	\centering
@@ -870,6 +768,164 @@
 	\caption{Išsidėstymo diagrama}
 	\label{img:deployment}
 \end{figure}
+
+\section{Testavimo planas ir scenarijai}
+Šiame skyriuje pateikiamas sistemos testavimo planas ir testavimo scenarijai
+\subsection{Naudotojo sąsajos testavimo scenarijai}
+Šiame poskyryje pateikiami testavimo scenarijai skirti naudotojo sąsajai. Visi naudotojo sąsajos testai atitinka naudotojo sąsajos užduotis.
+
+\subsubsection{T1 „Registruotis sistemoje“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs registracijos langą. \\
+\textbf{T1-1}. \\
+\textbf{Įvestis}: Naudotojas Registracijos lange spaudžia „Registruotis“ ir visi arba keletas laukų nėra užpildyti. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad reikia užpildyti visus laukus. \\ \\
+\textbf{T1-2}. \\
+\textbf{Įvestis}: Naudotojas Registracijos lange spaudžia „Registruotis“ ir slaptažodžių laukai nesutampa. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad slaptažodis ir pakartotas slaptažodis nesutampa\\ \\
+
+\subsubsection{T2 „Prisijungti prie sistemos“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs prisijungimo langą ir nėra prisijungęs  prie sistemos. \\
+\textbf{T2-1}. \\
+\textbf{Įvestis}: Naudotojas Prisijungimo lange spaudžia „Prisijungti“ neužpildęs nė vieno duomenų lauko. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad reikia įvesti el pašto adresą ir slaptažodį. \\ \\
+\textbf{T2-2}. \\
+\textbf{Įvestis}: Naudotojas Prisijungimo lange įveda neegzistuojančio naudotojo el. paštą ir spaudžia „Prisijungti“. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad toks naudotojas neegzistuoja\\ \\
+\textbf{T2-3}. \\
+\textbf{Įvestis}: Naudotojas Prisijungimo lange įveda neteisingą slaptažodį ir spaudžia „Prisijungti“. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad slaptažodis neteisingas\\ \\
+
+\subsubsection{T3 „Atnaujinti savo duomenis“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs duomenų atnaujinimo langą. \\
+\textbf{T3-1}. \\
+\textbf{Įvestis}: Naudotojas duomenų atnaujinimo lange spaudžia „Atnaujinti“ palikęs vieną ar daugiau tuščių laukų. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad visi laukai turi būti užpildyti. \\ \\
+\textbf{T3-2}. \\
+\textbf{Įvestis}: Naudotojas duomenų atnaujinimo lange spaudžia „Atnaujinti“ įvedęs jau esamą sistemoje el. pašto adresą. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad el. paštas yra netinkamas\\ \\
+
+\subsubsection{T4 „Prašyti priminti slaptažodį“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs slaptažodžio priminimo langąą. \\
+\textbf{T4-1}. \\
+\textbf{Įvestis}: Naudotojas slaptažodžio priminimo lange spaudžia „Patvirtinti“ palikęs tuščią lauką. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad nėra nurodytas el. pašto adresas. \\ \\
+\textbf{T4-2}. \\
+\textbf{Įvestis}: Naudotojas slaptažodžio priminimo lange spaudžia „Patvirtinti“ įvedęs neegzistuojantį sistemoje el. pašto adresą. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad tokiu el. paštu registruotos anketos nėra\\ \\
+
+\subsubsection{T5 „Atsijungti nuo sistemos“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs langą „Mano paskyra“. \\
+\textbf{T5-1}. \\
+\textbf{Įvestis}: Naudotojas lange „Mano paskyra“ spaudžia „Atsijungti“. \\
+\textbf{Išvestis}: Sistema naudotojui atvaizduoja prisijungimo langą \\ \\
+
+\subsubsection{T6 „Pateikti pagalbos prašymo užklausą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs pagalbos prašymo langą. \\
+\textbf{T6-1}. \\
+\textbf{Įvestis}: Naudotojas pagalbos prašymo lange spaudžia „Pateikti“ neužpildęs visų laukų. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad reikia užpildyti visus laukus. \\ \\
+\textbf{T6-2}. \\
+\textbf{Įvestis}: Naudotojas pagalbos prašymo lange spaudžia „Pateikti“ suvedęs neteisingus duomenis. \\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad įvesti duomenys neteisingi\\ \\
+
+\subsubsection{T7 „Atlikti esamų darbų paiešką“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs darbo paieškos langą. \\
+\textbf{T7-1}. \\
+\textbf{Įvestis}: Naudotojas darbo paieškos lange spaudžia „Ieškoti“ neįvedęs paieškos duomenų. \\
+\textbf{Išvestis}: Sistema naudotojui pateikia visų darbų sąrašą. \\ \\
+\textbf{T7-2}. \\
+\textbf{Įvestis}: Naudotojas darbo paieškos lange spaudžia „Ieškoti“ paieškos duomenis pagal kuriuos nėra randama darbų. \\
+\textbf{Išvestis}: Sistema naudotojui pateikia visų darbų sąrašą\\ \\
+
+\subsubsection{T8 „Peržiūrėti esąmų darbų sąrašą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs meniu langą. \\
+\textbf{T8-1}. \\
+\textbf{Įvestis}: Naudotojas meniu lange spaudžia „Darbų sąrašas“. \\
+\textbf{Išvestis}: Sistema naudotojui atvaizduoja darbų peržiūros langą \\ \\
+
+\subsubsection{T9 „Pasirinkti atlikti darbą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs darbo peržiūros langą. \\
+\textbf{T9-1}. \\
+\textbf{Įvestis}: Naudotojas darbo peržiūros lange spaudžia „Atlikti darbą“. \\
+\textbf{Išvestis}: Sistema naudotojui praneša, kad laukiama darbą pateikusiojo patvirtinimo \\ \\
+
+\subsubsection{T10 „Atšaukti pasirinktą darbą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs darbo atlikimo užklausos langą. \\
+\textbf{T10-1}. \\
+\textbf{Įvestis}: Naudotojas darbo atlikimo užklausos lange spaudžia „Patvirtinti“. \\
+\textbf{Išvestis}: Sistema naudotojui atvaizduoja darbo peržiūros langą \\ \\
+\textbf{T10-2}. \\
+\textbf{Įvestis}: Naudotojas darbo paieškos lange spaudžia „Atšaukti“. \\
+\textbf{Išvestis}: Sistema naudotojui parodo, kad darbo atlikimo užklausa atmesta\\ \\
+
+\subsubsection{T11 „Atšaukti pasirinktą darbą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs darbo peržiūros langą. \\
+\textbf{T11-1}. \\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Atšaukti“\\
+\textbf{Išvestis}: Sistema praneša naudotojui, kad jo darbo atlikimas buvo atšauktas ir pakeičia darbo atlikimo būseną į neatliekamą\\ \\
+
+\subsubsection{T12 „Įvertinti kitą naudotoją“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs langą „Atlikto darbo langas“. \\
+\textbf{T12-1}. \\
+\textbf{Įvestis}: Naudotojas  „Atlikto darbo lange“ ir pasirinkes įvertinimą spaudžia „Įvertinti“\\
+\textbf{Išvestis}: Naudotojo įvertinimas įrašytas į duomenų bazę ir matomas naudotojo paskyroje\\ \\
+\textbf{T12-2}. \\
+\textbf{Įvestis}:  Naudotojas  „Atlikto darbo lange“ ir nepasirinkes įvertinimo spaudžia „Įvertinti“\\
+\textbf{Išvestis}: Sistema praneša naudotojui kad reikia pasirinkti įvertinimą\\ \\
+
+\subsubsection{T13 „Peržiūrėti kito naudotojo paskyrą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs darbo peržiūros langą arba naudotojų reitingo langą. \\
+\textbf{T13-1}. \\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ arba „Naudotojų reitingo lange“ spaudžia ant kito naudotojo vardo\\
+\textbf{Išvestis}: Sistema rodo kito naudotojo paskyros langą\\ \\
+
+\subsubsection{T14 „Peržiūrėti atliktų darbų istoriją“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs meniu langą. \\
+\textbf{T14-1}. \\
+\textbf{Įvestis}: Naudotojas meniu lange spaudžia „Darbų istorija“\\
+\textbf{Išvestis}: Sistema lange „Darbų istorija“ rodo visus naudotojo jau atliktus darbus\\ \\
+
+\subsubsection{T15 „Peržiūrėti atsiskaitymų istoriją“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs langą „Mano paskyra“. \\
+\textbf{T15-1}. \\
+\textbf{Įvestis}: Naudotojas lange „Mano paskyra“ spaudžia „Atsiskaitymų istorija“\\
+\textbf{Išvestis}: Sistema lange „Atsiskaitymų istorija“ rodo visus naudotojo reitingus už atliktus darbus\\ \\
+
+\subsubsection{T16 „Peržiūrėti savo reitingą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs langą „Mano paskyra“. \\
+\textbf{T16-1}. \\
+\textbf{Įvestis}: Naudotojas lange „Mano paskyra“ spaudžia  „Reitingas“. \\
+\textbf{Išvestis}: Sistema lange  „Reitingas“ rodo naudotojo reitingą.\\ \\
+
+\subsubsection{T17 „Peržiūrėti naudotojų reitingų lentelę“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs meniu langą. \\
+\textbf{T17-1}. \\
+\textbf{Įvestis}: Naudotojas meniu lange spaudžia „Naudotojų reitingas“\\
+\textbf{Išvestis}: „Naudotojų reitingo“ lange rodomas visų naudotojų sąrašas surikiuotas pagal reitingą\\ \\
+
+\subsubsection{T18 „Peržiūrėti pasirinktų darbų sąrašą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs langą „Mano darbai“. \\
+\textbf{T18-1}. \\
+\textbf{Įvestis}: Naudotojas lange „Mano darbai “ spaudžia „Atliekami darbai“\\
+\textbf{Išvestis}: Lange „Mano darbai“ rodomi naudotojo pasirinkti atlikti darbų sąrašas\\ \\
+
+\subsubsection{T19 „Peržiūrėti pateiktų darbų sąrašą“}
+\textbf{Reikalavimai}: Naudotojas yra atsidaręs meniu langą arba pagrindinį langą. \\
+\textbf{T19-1}. \\
+\textbf{Įvestis}:  Naudotojas menių lange arba „Pagrindiniame lange“ spaudžia „Mano darbai“\\
+\textbf{Išvestis}: Lange „Mano darbai“ rodomas naudotojo darbų sąrašas\\ \\
+
+\subsubsection{T20 „Ištrinti pateiktą darbą“}
+\textbf{Reikalavimai}: Naudotojas yra pasirinkęs darbą ir atsidaręs darbo peržiūro langą. \\
+\textbf{T20-1}. \\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas nėra pasirinktas ar pradėtas vykdyti kito naudotojo. \\
+\textbf{Išvestis}: Pasirinktas darbas ištrintas iš duomenų bazės. \\ \\
+\textbf{T20-2}. \\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas yra pasirinktas atlikti kito naudotojo. \\
+\textbf{Išvestis}: Sistema praneša vartotojui, kad pirma reikia atšaukti atlikimo užklausą. Darbas neištrintas iš duomenų bazės\\ \\
+\textbf{T20-3}. \\
+\textbf{Įvestis}: Naudotojas „Darbo peržiūros lange“ spaudžia „Ištrinti“ ir darbas yra vykdomas naudotojo. \\
+\textbf{Išvestis}: Sistema praneša vartotojui, kad darbo atšaukti negalima. Darbas neištrintas iš duomenų bazės\\ \\
 
 \sectionnonum{Išvados}
 Remiantis ICONIX procesu, buvo peržiūrėti ir šiame dokumente surašyti visi reikalavimai mobiliajai programėlei „Help4Help", . Taip pat sukurtas ir pateiktas dalykinės srities modelis bei naudotojo užduočių diagrama, aprašyti užduočių vykdymo scenarijai bei sukurtos atsekamumo matricos.
@@ -912,6 +968,12 @@ Remiantis ICONIX procesu, buvo peržiūrėti ir šiame dokumente surašyti visi 
 		\textbf{P14} & Pagal pasikeitusius UC pakeistos visos esybės bei esybių diagramos & \\
 		\textbf{P15} & Nereikalingos papildomos esybės & Pašalintos esybės E11 Atliktas darbas ir E10 Atliekamas darbas \\
 		\textbf{P16} & Trūksta esybės & Pridėta esybė E10 Naudotojų sąrašas \\
+		\textbf{P17} & 3 lab. darbas & Pridėtos sekų diagramos \\
+		\textbf{P18} & 3 lab. darbas & Aprašytas testavimo planas ir testavimo scenarijai \\
+		\textbf{P} & 3 lab. darbas & Pašalintos robustiškumo diagramos \\
+		\textbf{P} & 3 lab. darbas & Atnaujintas struktūrinis dalykinės srities modelis \\
+		\textbf{P} & Reikalavimai tapo nebereikalingi & Pašalinti reikalavimus 20-35 \\
+		\textbf{P} & & \\
 		\hline
 	\end{tabular}}
 	}
