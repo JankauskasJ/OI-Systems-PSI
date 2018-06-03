@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">H4H</string>
+
+    <string-array name="profile_items">
+        <item>Mano duomenys</item>
+        <item>Atsiskaitymų istorija</item>
+        <item>Darbų istorija</item>
+        <item>Reitingas</item>
+        <item>Statistika</item>
+        <item>Atnaujinti duomenis</item>
+        <item>Pakeisti slaptažodį</item>
+        <item>Atsijungti</item>
+    </string-array>
+
+    <string-array name="menu_items">
+        <item>Mano darbai</item>
+        <item>Prašyti pagalbos</item>
+        <item>Darbų sąrašas</item>
+        <item>Ieškoti darbo</item>
+        <item>Naudotojų reitingas</item>
+        <item>Nustatymai</item>
+    </string-array>
+
+</resources>
